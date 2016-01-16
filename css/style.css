@@ -133,13 +133,14 @@ img #hero {
 	margin-top: 200px; /*Once we have the header just like we want it, we should adjust this number so that the hero image sits exactly right below the header instead of leaving a white gap between the header and it and also not getting stuck behind the header where we can't see the whole header. */
 	} 
 	
-img.artwalk {
+.artwalk {
 	width: 90%;
 	height:	auto;
 	margin-right: 5%;
 	margin-left: 5%;
 	margin-top: 10px;
 	margin-bottom: 20px;
+	position: relative;
 	}
 	
 /* don't forget to style the nav here. */
@@ -197,19 +198,23 @@ h3 {
 
 h3.typeover {
 	display: block;
-	width: 90%;
-	margin-right: auto;
-	margin-left:auto;
+	width: 100%;
+	height:	auto;
+	margin: 0;
 	align: center;
 	box-sizing: border-box;
-	z-index: 9;
-	position: absolute;
-	text-align: center;
-	color: white;
+	z-index: 5;
 	padding: 10px;
-	background-color: black;
-	
+	text-align: center;
+	background-color: rgba(0,0,0,0.6);
+	color: white;
+	position: absolute;
+	bottom: 25px;
 	}
+	
+a h3:hover {
+	color: #ea3b3e;
+	}	
 	
 h4 {
 	text-align: left;
@@ -270,3 +275,34 @@ a.button:hover {
 	color: white;
 	}
 	
+/*These are for the slides. */
+
+/* for slides that have been navigated past the current*/
+.css-slider .slide: focus~.slide {
+	padding-left: 40px;
+	padding-right: 0;
+	left: 0;
+	right: 40px;
+	}
+	
+.css-slider.slide: focus, .css-slider.slide: focus: hover, .css-slider.slide: last-child, .css-slider:last-child:hover {
+	left: 40px; right: 40px;
+	padding-left: 0;
+	padding-right: 0;
+	background: transparent;
+	z-index: 101;
+	cursor: default;
+}
+
+.css-slider.slide {
+	display: block;
+	position: absolute;
+	left: 40px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	z-index: 100;
+	outline: 0;
+}
