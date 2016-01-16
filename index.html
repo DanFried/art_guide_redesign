@@ -1,1 +1,147 @@
-echo
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<!--the below items connect to google fonts.-->
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<title>Arts Guide Northwest</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--I am going to try to code for mobile first.-->
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+
+<body>
+<!--h1 is for the main title.
+	h2 is for the heading of each section (such as Art Walk, Events, etc).
+    h3 is for a sub-heading below the h2 if needed.
+    h4 is for a small headline on a specific article, featured event, etc.
+    h5 is for a clickable button.
+    -->
+    
+<header>
+    <div class="whole"> <!--HEY DAN: We talked about programming the logo as responsive text rather than making an image. I've put the text in here as the placeholder, but if you could style the h1 or add whatever needs to happen to make that work, that would be super since you have been primarily designing the logo.-->
+    <h1>Arts Guide Northwest</h1> 
+    </div>
+    <!--add the search bar and the nav below here-->
+    <div class="">
+    <nav>
+    
+    </nav>
+   	</div>
+</header>
+
+<!--This is attempting to eventually be a rotating hero image.-->
+	<div class="row pad_top">
+    <div class="whole">
+    <img id="hero" src="img/JesseLinkin_Chimp.jpg" alt="JesseLinkin's of a chimpanzee with an apple"/>
+    </div>
+    </div> <!--End Hero Image-->
+
+<!--this div is for the Art Walk section.-->
+    	<div class="row">
+    	<div class="whole">
+        <div class="grayarea">
+    		<h2>Art Walks</h2>
+    		<h3>Second Saturday</h3> 
+   		 	<h3>February 13, 2016</h3> <!--this date should fill with the next appropriate date for the event-->
+    		<img class="artwalk" src="img/georgetownseattle.jpg" alt="Brick building in Seattle's Georgetown Neighborhood"/> <!--this image is appropriate for the matching date-->
+            <h3 class="typeover">Georgetown Art Attack</h3>
+    	
+        <a class="button" href="#"> 
+        		<h5>More Art Walks</h5>  
+        </a>
+      
+        </div> 
+        </div>
+   		</div><!--Ending the Art Walk Section-->
+
+
+
+<!--this div is for the Upcoming Events section-->
+	    <div class="row">
+    	<div class="whole">
+        <div class="whitearea">
+        	<h2>Upcoming Events</h2>
+            
+                <!--Event #1--><div class="row">
+                    <a href="#">
+                    <div class="third">
+                        <img class="square" src="img/KehindeWiley_RandersonRomualdoCordeiro.jpg" alt="Kehinde Wiley's painting called Randerson Romualdo Cordeiro"/>
+                    </div>
+                    </a>
+                    <div class="twothirds">
+                    	<a href="#">
+                        <h4>Kehinde Wiley Exhibition</h4>
+                        </a>
+                        <h4>Seattle Art Museum</h4>
+                        <h4>February 11-May 8</h4>
+                        <p>Kehinde Wiley is one of the leading American artists to emerge in the last decade and he has been ingeniously reworking the grand portraiture traditions of Western culture. Wiley’s portraits are highly stylized and staged, and draw attention to the dialectic between a history of aristocratic representation and the portrait as a statement of power and the individual’s sense of empowerment.</p> <!--I don't know why this paragraph isn't aligned with the other ones in the Upcoming Events section.-->
+                    </div>
+                    </div> <!--End Event #1-->
+                    
+                    <!--Event #2--> <div class="row">
+                    <a href="#">
+                    <div class="third">
+                        <img class="square" src="img/bronzecastingpour.jpg" alt="Close up of pouring molten bronze"/>
+                    </div>
+                    </a>
+                    <div class="twothirds">
+                    	<a href="#">
+                        <h4>Bronze Casting Course</h4>
+                        </a>
+                        <h4>Pratt Fine Art Center</h4>
+                        <h4>February 25-April 4 | Thursdays | 6-10pm</h4>
+                        <p>Learn the ancient 'lost wax' casting process. First, you'll learn basic moldmaking to duplicate a design in wax. This wax copy is then 'invested' in a plaster and sand mixture. Then the wax will be burned out of the plaster, leaving a void to be filled with bronze.</p>
+                    </div>
+                    </div> <!--End Event #2-->
+    
+                    <!--Event #3--> <div class="row">
+                    <a href="#">
+                    <div class="third">
+                        <img class="square" src="img/SunMu_KimJong-Il.jpg" alt="Sun Mu's painting called Kim Jong-Il"/>
+                    </div>
+                    </a>
+                    <div class="twothirds">
+                    	<a href="#">
+                        <h4><span class="italic">I Am Sun Mu</span> Film Screening</h4>
+                     	</a>
+                        <h4>Asian Art Museum</h4>
+                        <h4>March 3 | 7-8:30pm</h4>
+                        <p>After fleeing his native North Korea to defect to the south, Sun Mu works under a defiant alias meaning “no boundaries” to criticize the repressive regime. A former propaganda artist, he subverts familiar images which once glorified the leadership, transforming them into satirical political pop art. Offered an unlikely solo exhibition in China, the anonymous artist prepares his show undercover, potentially risking his own freedom and safety to expose the truth through art.</p>
+                    </div>
+                    </div> <!--End Event #3-->
+  
+              <a class="button" href="#"> 
+        		<h5>Full Calendar</h5>  
+       		 </a>
+
+            </div>
+        	</div>
+            </div>
+        </div> <!--Closing the Upcoming Event section.-->
+
+
+<!--this div is for the Map section."-->
+    	<div class="row">
+    	<div class="whole">
+        <div class="grayarea">
+    		<h2>Locations</h2>
+            
+            <!--insert location information here-->
+            
+    	</div>
+        </div>
+        </div>	
+        
+
+
+</body>
+</html>
