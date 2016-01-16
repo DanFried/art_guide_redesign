@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* BEGIN RESET
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*END RESET.*/
+
+
+/*FOR REFERENCE:
+		COLORS:  "white" and "black"
+				  red: #ea3b3e
+				  light (15%) gray: #dbdcde
+				  dark (70%) gray: #6d6e70
+*/				 
+
+
+/*BEGIN basic structural divs*/
+
+.row {
+	max-width: 600px;
+	box-sizing: border-box;
+	clear: both;
+	margin: none;
+	}
+
+
+.whole, .half, .half_last, .third, .third_last, .twothirds {
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	}
+
+.pad_top {
+		padding-top:100px;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		padding: none;
+		}
+
+.whole {
+	width: 100%;
+	}
+	
+.half {
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+	}
+	
+.third {
+	float: left;
+	width: 31%;
+	margin-right: 3.5%;
+} /*31 + 31 + 31 + 3.5 + 3.5 = 100*/
+
+.third_last {
+	float: left;
+	width: 31%;
+	margin-right: 0;
+	}
+
+.twothirds {
+	float: left;
+	width: 62%;
+	margin-right: 0;
+	}
+	
+	
+header {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background-color: #ea3b3e;
+	padding: 20px;
+	z-index: 10;
+	}
+
+img {
+	max-width: 100%;
+	width:100%;
+	height: auto;
+	}
+
+img #hero {
+	margin-top: 200px; /*Once we have the header just like we want it, we should adjust this number so that the hero image sits exactly right below the header instead of leaving a white gap between the header and it and also not getting stuck behind the header where we can't see the whole header. */
+	} 
+	
+img.artwalk {
+	width: 90%;
+	height:	auto;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	}
+	
+/* don't forget to style the nav here. */
+
+		
+.grayarea {
+	background-color: #dbdcde;
+	padding-bottom: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	margin-top: -25px;  /* I don't know why you need this negative number for a margin here, but if you don't do it, then there is a weird white gap between the sections. Maybe there is a more useful/elegant solution? */
+}
+
+.whitearea {
+	background-color: white;
+	padding-bottom: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	margin-top: -25px;
+	}
+
+h1 {
+	position: fixed;
+	width: 100%;
+    left: 0;
+    top: 0;
+    text-align: left;
+    padding: 20px;
+	font-family: 'Montserrat', sans;
+	font-size: 40;
+	font-weight: 700;
+	color: white;
+	}
+	
+h2 {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+    font-family: 'Montserrat', sans;
+	font-size: 28px;
+	font-weight: 700;
+	color: black;
+	}
+
+h3 {
+	text-align: center;
+	margin-bottom: 5px;
+    font-family: 'Montserrat', sans;
+	font-size: 22px;
+	font-weight: 400;
+	color: #6d6e70;
+	}	
+
+h3.typeover {
+	display: block;
+	width: 90%;
+	margin-right: auto;
+	margin-left:auto;
+	align: center;
+	box-sizing: border-box;
+	z-index: 9;
+	position: absolute;
+	text-align: center;
+	color: white;
+	padding: 10px;
+	background-color: black;
+	
+	}
+	
+h4 {
+	text-align: left;
+	margin-bottom: 5px;
+    font-family: 'Montserrat', sans;
+	font-size: 14px;
+	font-weight: 700;
+	color: #6d6e70;
+	}	
+a h4:hover {
+	color: #ea3b3e;
+	}
+
+h5 {
+	font-family: 'Montserrat', sans;
+	font-size: 14px;
+	font-weight: 700;
+	color: white;
+	}
+
+
+p {
+	text-align: left;
+    font-family: 'Lora', serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: black;
+	line-height: 18px;
+	}
+
+.italic {
+	font-style: italic;
+	}
+
+a {
+	text-decoration: none;
+	}
+
+a:hover {
+	color: #ea3b3e;
+	}
+	
+.button {
+	display: block;
+	max-width: 40%;
+	margin-right: auto;
+	margin-left:auto;
+	clear: both;
+	align: center;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 10px;
+	background-color: #6d6e70;
+	}
+	
+a.button:hover {
+	background-color: #ea3b3e;
+	color: white;
+	}
+	
