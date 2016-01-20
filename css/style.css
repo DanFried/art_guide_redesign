@@ -64,6 +64,10 @@ table {
 
 /*BEGIN basic structural divs*/
 
+* {
+	box-sizing: border-box;
+}
+
 .row {
 	max-width: 600px;
 	box-sizing: border-box;
