@@ -138,12 +138,6 @@ img #hero {
 	} 
 	
 .artwalk {
-	width: 90%;
-	height:	auto;
-	margin-right: 5%;
-	margin-left: 5%;
-	margin-top: 10px;
-	margin-bottom: 20px;
 	position: relative;
 	}
 	
@@ -157,7 +151,7 @@ img #hero {
 	position: relative;
 	}
 	
-/* don't forget to style the nav here. */
+/* don't forget to style the nav. */
 
 		
 .grayarea {
@@ -186,7 +180,7 @@ h1 {
     text-align: left;
     padding: 20px;
 	font-family: 'Montserrat', sans;
-	font-size: 40;
+	font-size: 40px;
 	font-weight: 700;
 	color: #ea3b3e;
 	}
@@ -223,7 +217,7 @@ h3.typeover {
 	background-color: rgba(0,0,0,0.6);
 	color: white;
 	position: absolute;
-	bottom: 25px;
+	bottom: 30px;
 	}
 	
 a h3:hover {
@@ -249,7 +243,6 @@ h5 {
 	color: white;
 	}
 
-
 p {
 	text-align: left;
     font-family: 'Lora', serif;
@@ -266,14 +259,13 @@ p {
 a {
 	text-decoration: none;
 	}
-
 a:hover {
 	color: #ea3b3e;
 	}
 	
 .button {
 	display: block;
-	max-width: 40%;
+	max-width: 50%;
 	margin-right: auto;
 	margin-left:auto;
 	clear: both;
