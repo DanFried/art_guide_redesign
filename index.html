@@ -31,22 +31,25 @@
     h3 is for a sub-heading below the h2 if needed.
     h4 is for a small headline on a specific article, featured event, etc.
     h5 is for a clickable button.
+
+    Just to add to this, I don't think we should h4s for the date, as it isn't exactly a title.
+    Putting it in a P with a Span for styling might be good.
     -->
     
     <header>
         <h1>Arts Guide Northwest</h1>
         <div class="logo_mobile"> 
-            <a href="index.html" alt="home">
+            <a href="index.html" title="home">
                 <img src="img/ag_nw_logo_mobile.svg" alt="Art Guide Northwest Logo">
             </a>
         </div>
         <div class="logo_tablet">
-            <a href="index.html" alt="home">
+            <a href="index.html" title="home">
                 <img src="img/ag_nw_logo_tablet.svg" alt="Art Guide Northwest Logo">
             </a>
         </div>
         <div class="logo_desktop">
-            <a href="index.html" alt="home">
+            <a href="index.html" title="home">
                 <img src="img/ag_nw_logo_desktop.svg" alt="Art Guide Northwest Logo">
             </a>
         </div>
@@ -63,66 +66,42 @@
                 <ul> <!--UL container for main nav-->
                     <li class="drop">
                         <a href="#">Galleries</a>
-                            <div class="dropdownContain">
-                                <div class="dropOut">
-                                    <div class="triangle">
-                                         <ul class="subnav">
-                                            <li><a href="#">Downtown</a></li>
-                                            <li><a href="#">Pioneer Square</a></li>
-                                            <li><a href="#">Capitol Hill</a></li>
-                                            <li><a href="#">Belltown</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                        <ul class="subnav">
+                            <li><a href="#">Downtown</a></li>
+                            <li><a href="#">Pioneer Square</a></li>
+                            <li><a href="#">Capitol Hill</a></li>
+                            <li><a href="#">Belltown</a></li>
+                        </ul>
                     </li>
 
                     <li class="drop">
                         <a href="#">Museums</a>
-                            <div class="dropdownContain">
-                                <div class="dropOut">
-                                    <div class="triangle">
-                                        <ul class="subnav">
-                                            <li><a href="https://henryart.org/">Henry</a></li>
-                                            <li><a href="http://fryemuseum.org/">Frye</a></li>
-                                            <li><a href="http://seattleartmuseum.org/">SAM</a></li>
-                                            <li><a href="http://www.wingluke.org/">Wing Luke</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                        <ul class="subnav">
+                            <li><a href="https://henryart.org/">Henry</a></li>
+                            <li><a href="http://fryemuseum.org/">Frye</a></li>
+                            <li><a href="http://seattleartmuseum.org/">SAM</a></li>
+                            <li><a href="http://www.wingluke.org/">Wing Luke</a></li>
+                        </ul>
                     </li>
 
                     <li class="drop">
                         <a href="#">Events</a>
-                            <div class="dropdownContain">
-                                <div class="dropOut">
-                                    <div class="triangle">
-                                        <ul class="subnav">
-                                            <li><a href="#">Downtown</a></li>
-                                            <li><a href="#">Pioneer Square</a></li>
-                                            <li><a href="#">Capitol Hill</a></li>
-                                            <li><a href="#">Belltown</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                        <ul class="subnav">
+                            <li><a href="#">Downtown</a></li>
+                            <li><a href="#">Pioneer Square</a></li>
+                            <li><a href="#">Capitol Hill</a></li>
+                            <li><a href="#">Belltown</a></li>
+                        </ul>
                     </li>
 
                     <li class="drop">
                         <a href="#">Resources</a>
-                            <div class="dropdownContain">
-                                <div class="dropOut">
-                                    <div class="triangle">
-                                        <ul class="subnav">
-                                            <li><a href="">Artists</a></li>
-                                            <li><a href="http://www.cornish.edu/">Cornish</a></li>
-                                            <li><a href="http://www.pnca.edu/">PNCA</a></li>
-                                            <li><a href="http://www.pratt.org/">Pratt</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                        <ul class="subnav">
+                            <li><a href="">Artists</a></li>
+                            <li><a href="http://www.cornish.edu/">Cornish</a></li>
+                            <li><a href="http://www.pnca.edu/">PNCA</a></li>
+                            <li><a href="http://www.pratt.org/">Pratt</a></li>
+                        </ul>
                     </li>
                     
                     <li class="mainnav"><a href="#">Journal</a></li>
@@ -152,39 +131,41 @@
    		 	<h3>February 13, 2016</h3> 
             
     		<!--begin carousel. I got this carousel by inserting straight from dreamweaver and then deleting a bunch of unnecessary stuff. feel free to edit if you find problems!-->
-          <div id="carousel1" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
+        <div id="carousel1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
                 <li data-target="#carousel1" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel1" data-slide-to="1"></li>
                 <li data-target="#carousel1" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner" role="listbox">
+            </ol>
+            <div class="carousel-inner" role="listbox">
                 <div class="item active">
                		 <div class="artwalk">
         				<a href="#">
-        				<img src="img/georgetownseattle.jpg" alt="Brick building in Seattle's Georgetown Neighborhood" class="center-block">
-                   		 <h3 class="typeover">Georgetown Art Attack</h3>
+            				<img src="img/georgetownseattle.jpg" alt="Brick building in Seattle's Georgetown Neighborhood" class="center-block">
+                       		 <h3 class="typeover">Georgetown Art Attack</h3>
           				</a>
                   	</div>
                 </div>
                 <div class="item">
                 	<div class="artwalk">
                     	<a href="#">
-                		<img src="img/ballardseattle.jpg" alt="Chittenden Locks in Seattle's Ballard Neighborhood" class="center-block">
-                    	<h3 class="typeover">Ballard Artwalk</h3>
+                    		<img src="img/ballardseattle.jpg" alt="Chittenden Locks in Seattle's Ballard Neighborhood" class="center-block">
+                        	<h3 class="typeover">Ballard Artwalk</h3>
                   		</a>
                  	 </div>
                 </div>
                 <div class="item">
                 	<div class="artwalk">
-                    <a href="#">
-                <img src="img/centraldistrictseattle.jpg" alt="Ernestine Anderson mural from the Jackson Street Music History Project in Seattle's Central District" class="center-block">
-                    <h3 class="typeover">Central District Art Walk</h3>
-                    </a>
+                        <a href="#">
+                            <img src="img/centraldistrictseattle.jpg" alt="Ernestine Anderson mural from the Jackson Street Music History Project in Seattle's Central District" class="center-block">
+                            <h3 class="typeover">Central District Art Walk</h3>
+                        </a>
                     </div>
                 </div>
-              </div>
-              <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel1" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a></div>
+          </div>
+          <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+          <a class="right carousel-control" href="#carousel1" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+       </div>
   <!--end carousel-->          
 
            

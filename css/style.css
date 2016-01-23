@@ -305,9 +305,9 @@ ul li a:hover {
 }
 
 ul li:hover a { color: #ea3b3e; }
-ul li:hover .dropdownContain { top: 65px; }
+/*ul li:hover .dropdownContain { top: 65px; }
 ul li:hover .underline { border-bottom-color: #777; }
-ul li:hover .dropOut { opacity: 1; margin-top: 8px; }
+ul li:hover .dropOut { opacity: 1; margin-top: 8px; }*/
 
 
 /*DEPRECATED STYLES shit ain't responsive! */
