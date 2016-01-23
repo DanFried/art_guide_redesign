@@ -127,13 +127,10 @@ header {
 	width: 100%;
 	left: 0;
 	top: 0;
-<<<<<<< HEAD
 	background-color: #ffffff;
 	padding: 0px;
-=======
 	background-color: white;
 	padding: 20px;
->>>>>>> origin/gh-pages
 	z-index: 10;
 	}
 
@@ -160,7 +157,6 @@ img #hero {
 	margin-bottom: 20px;
 	position: relative;
 	}
-<<<<<<< HEAD
 /* logo styles */
 
 .logo_mobile {
@@ -230,10 +226,8 @@ img #hero {
 	width: 80%; 
 	height: 35px; 
 }
-=======
 	
 /* don't forget to style the nav. */
->>>>>>> origin/gh-pages
 
 .search-form { 
 	width: 100%; 
@@ -413,19 +407,16 @@ h1 {
     top: 0;
     text-align: left;
     padding: 20px;
-<<<<<<< HEAD
     display: none;
     text-indent: -9999px;
 	/*font-family: 'Montserrat', sans;
 	font-size: 40;
 	font-weight: 700;
 	color: white;*/
-=======
 	font-family: 'Montserrat', sans;
 	font-size: 40px;
 	font-weight: 700;
 	color: #ea3b3e;
->>>>>>> origin/gh-pages
 	}
 	
 h2 {
@@ -520,7 +511,6 @@ a:hover {
 a.button:hover {
 	background-color: #ea3b3e;
 	color: white;
-<<<<<<< HEAD
 	}
 	
 
@@ -671,9 +661,3 @@ footer img {
     display: none;
 }
 
-
-
-}
-=======
-	}
->>>>>>> origin/gh-pages
