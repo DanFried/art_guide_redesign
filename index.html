@@ -26,187 +26,237 @@
     h5 is for a clickable button.
     -->
     
-<header>
-    <div class="whole"> <!--HEY DAN: We talked about programming the logo as responsive text rather than making an image. I've put the text in here as the placeholder, but if you could style the h1 or add whatever needs to happen to make that work, that would be super since you have been primarily designing the logo.-->
-        <h1>Arts Guide Northwest</h1> 
-    </div>
-    <!--add the search bar and the nav below here-->
-    <div class="">
-        <nav id="nav">
-            <ul> <!--UL container for main nav-->
-                <li id="mainnav">
-                    <a href="">Galleries</a>
-                        <ul id="subnav">
-                            <li><a href="">Downtown</a></li>
-                            <li><a href="">Pioneer Square</a></li>
-                            <li><a href="">Capitol Hill</a></li>
-                            <li><a href="">Belltown</a></li>
-                        </ul>
-                </li>
+    <header>
+        <h1>Arts Guide Northwest</h1>
+        <div class="logo_mobile"> 
+            <a href="index.html" alt="home">
+                <img src="img/ag_nw_logo_mobile.svg" alt="Art Guide Northwest Logo">
+            </a>
+        </div>
+        <div class="logo_tablet">
+            <a href="index.html" alt="home">
+                <img src="img/ag_nw_logo_tablet.svg" alt="Art Guide Northwest Logo">
+            </a>
+        </div>
+        <div class="logo_desktop">
+            <a href="index.html" alt="home">
+                <img src="img/ag_nw_logo_desktop.svg" alt="Art Guide Northwest Logo">
+            </a>
+        </div>
+        <!--add the search bar and the nav below here-->
+        <div class="search_bar">    
+            <form class="search-form">
+                <div class="search-field-container">
+                    <input type="text" class="search-field" placeholder="Search..." />
+                </div>  
+            </form>
+        </div>
+        
+            <nav class="nav" id="nav">
+                <ul> <!--UL container for main nav-->
+                    <li class="drop">
+                        <a href="#">Galleries</a>
+                            <div class="dropdownContain">
+                                <div class="dropOut">
+                                    <div class="triangle">
+                                         <ul class="subnav">
+                                            <li><a href="#">Downtown</a></li>
+                                            <li><a href="#">Pioneer Square</a></li>
+                                            <li><a href="#">Capitol Hill</a></li>
+                                            <li><a href="#">Belltown</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                    </li>
 
-                <li id="mainnav">
-                    <a href="">Museums</a>
-                        <ul id="subnav">
-                            <li><a href="https://henryart.org/">Henry</a></li>
-                            <li><a href="http://fryemuseum.org/">Frye</a></li>
-                            <li><a href="http://seattleartmuseum.org/">SAM</a></li>
-                            <li><a href="http://www.wingluke.org/">Wing Luke</a></li>
-                        </ul>
-                </li>
+                    <li class="drop">
+                        <a href="#">Museums</a>
+                            <div class="dropdownContain">
+                                <div class="dropOut">
+                                    <div class="triangle">
+                                        <ul class="subnav">
+                                            <li><a href="https://henryart.org/">Henry</a></li>
+                                            <li><a href="http://fryemuseum.org/">Frye</a></li>
+                                            <li><a href="http://seattleartmuseum.org/">SAM</a></li>
+                                            <li><a href="http://www.wingluke.org/">Wing Luke</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                    </li>
 
-                <li id="mainnav">
-                    <a href="">Events</a>
-                        <ul id="subnav">
-                            <li><a href="">Downtown</a></li>
-                            <li><a href="">Pioneer Square</a></li>
-                            <li><a href="">Capitol Hill</a></li>
-                            <li><a href="">Belltown</a></li>
-                        </ul>
-                </li>
+                    <li class="drop">
+                        <a href="#">Events</a>
+                            <div class="dropdownContain">
+                                <div class="dropOut">
+                                    <div class="triangle">
+                                        <ul class="subnav">
+                                            <li><a href="#">Downtown</a></li>
+                                            <li><a href="#">Pioneer Square</a></li>
+                                            <li><a href="#">Capitol Hill</a></li>
+                                            <li><a href="#">Belltown</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                    </li>
 
-                <li id="mainnav">
-                    <a href="">Resources</a>
-                        <ul id="subnav">
-                            <li><a href="">Artists</a></li>
-                            <li><a href="http://www.cornish.edu/">Cornish</a></li>
-                            <li><a href="http://www.pnca.edu/">PNCA</a></li>
-                            <li><a href="http://www.pratt.org/">Pratt</a></li>
-                        </ul>
-                </li>
-                
-                <li><a href="">Journal</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Contribute</a></li>
-            </ul>
-    
-        </nav>
-   	</div>
-</header>
+                    <li class="drop">
+                        <a href="#">Resources</a>
+                            <div class="dropdownContain">
+                                <div class="dropOut">
+                                    <div class="triangle">
+                                        <ul class="subnav">
+                                            <li><a href="">Artists</a></li>
+                                            <li><a href="http://www.cornish.edu/">Cornish</a></li>
+                                            <li><a href="http://www.pnca.edu/">PNCA</a></li>
+                                            <li><a href="http://www.pratt.org/">Pratt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                    </li>
+                    
+                    <li class="mainnav"><a href="#">Journal</a></li>
+                    <li class="mainnav"><a href="#">About AG</a></li>
+                    <li class="mainnav"><a href="#">Contact</a></li>
+                    <li class="mainnav"><a href="#">Contribute</a></li>
+                </ul>
+        
+            </nav>
+       	
+    </header>
 
-<!--This is attempting to eventually be a rotating hero image.-->
-	<div class="row pad_top">
-    <div class="whole">
-    <img id="hero" src="img/JesseLinkin_Chimp.jpg" alt="JesseLinkin's of a chimpanzee with an apple"/>
-    </div>
+    <!--This is attempting to eventually be a rotating hero image.-->
+    <div class="row pad_top">
+        <div class="whole">
+            <img id="hero" src="img/JesseLinkin_Chimp.jpg" alt="JesseLinkin's of a chimpanzee with an apple"/>
+        </div>
     </div> <!--End Hero Image-->
 
-<!--this div is for the Art Walk section.-->
-    	<div class="row">
-    	<div class="whole">
-        <div class="grayarea">
-    		<h2>Art Walks</h2>
-    		<h3>Second Saturday</h3> 
-   		 	<h3>February 13, 2016</h3> <!--this date should fill with the next appropriate date for the event-->
-    		
+    <!--this div is for the Art Walk section.-->
+    <div class="row">
+        <div class="whole">
+            <div class="grayarea">
+        		<h2>Art Walks</h2>
+        		<h3>Second Saturday</h3> 
+       		 	<h3>February 13, 2016</h3> 
+                <!--this date should fill with the next appropriate date for the event-->
+        		
 
-          <div class="artwalk">
-            <a href="#">
-            <img src="img/georgetownseattle.jpg" alt="Brick building in Seattle's Georgetown Neighborhood"/>             
-            <!-- We had talked about this being a sort of carosel/slider.
-            There are 2 other images for Second Saturday artwalk: 		 				
-            They are:
-            img src="ballardseattle.jpg" alt="Chittenden Locks in Seattle's Ballard Neighborhood"/> 
-            and
-             <img src="centraldistrictseattle.jpg" alt="Ernestine Anderson mural from the Jackson Street Music History Project in Seattle's Central District"/> 
-             I tried ripping a carousel slider from the internet, but it didn't work. The url is here: http://stackoverflow.com/questions/21647389/implement-a-css-only-slideshow-carousel-with-next-and-previous-buttons
-             I think there are critical some parts that are missing, such as the arrow keys, that are needed to make this work properly.-->
-            <h3 class="typeover">Georgetown Art Attack</h3>
-          	</a>            
-          	</div>
-           
-        <a class="button" href="#"> 
-   		<h5>More Art Walks</h5>  
-        </a>
-      
-        </div> 
-        </div>
-   		</div><!--Ending the Art Walk Section-->
-
-
-
-<!--this div is for the Upcoming Events section-->
-	    <div class="row">
-    	<div class="whole">
-        <div class="whitearea">
-        	<h2>Upcoming Events</h2>
-            
-                <!--Event #1--><div class="row">
+                <div class="artwalk">
                     <a href="#">
-                    <div class="third">
-                        <img class="square" src="img/KehindeWiley_RandersonRomualdoCordeiro.jpg" alt="Kehinde Wiley's painting called Randerson Romualdo Cordeiro"/>
-                    </div>
+                        <img src="img/georgetownseattle.jpg" alt="Brick building in Seattle's Georgetown Neighborhood"/>             
+                    <!-- We had talked about this being a sort of carosel/slider.
+                    There are 2 other images for Second Saturday artwalk: 		 				
+                    They are:
+                    img src="ballardseattle.jpg" alt="Chittenden Locks in Seattle's Ballard Neighborhood"/> 
+                    and
+                     <img src="centraldistrictseattle.jpg" alt="Ernestine Anderson mural from the Jackson Street Music History Project in Seattle's Central District"/> 
+                     I tried ripping a carousel slider from the internet, but it didn't work. The url is here: http://stackoverflow.com/questions/21647389/implement-a-css-only-slideshow-carousel-with-next-and-previous-buttons
+                     I think there are critical some parts that are missing, such as the arrow keys, that are needed to make this work properly.-->
+                        <h3 class="typeover">Georgetown Art Attack</h3>
+                  	</a>            
+              	</div>
+               
+                <a class="button" href="#"> 
+           		<h5>More Art Walks</h5>  
+                </a>
+          
+            </div> 
+        </div>
+    </div><!--Ending the Art Walk Section-->
+
+
+
+    <!--this div is for the Upcoming Events section-->
+    <div class="row">
+        <div class="whole">
+            <div class="whitearea">
+            	<h2>Upcoming Events</h2>
+                
+                <div class="row"><!--Event #1-->
+                    <a href="#">
+                        <div class="third">
+                            <img class="square" src="img/KehindeWiley_RandersonRomualdoCordeiro.jpg" alt="Kehinde Wiley's painting called Randerson Romualdo Cordeiro"/>
+                        </div>
                     </a>
                     <div class="twothirds">
-                    	<a href="#">
-                        <h4>Kehinde Wiley Exhibition</h4>
+                        <a href="#">
+                            <h4>Kehinde Wiley Exhibition</h4>
                         </a>
                         <h4>Seattle Art Museum</h4>
                         <h4>February 11-May 8</h4>
                         <p>Kehinde Wiley is one of the leading American artists to emerge in the last decade and he has been ingeniously reworking the grand portraiture traditions of Western culture. Wiley’s portraits are highly stylized and staged, and draw attention to the dialectic between a history of aristocratic representation and the portrait as a statement of power and the individual’s sense of empowerment.</p> <!--I don't know why this paragraph isn't aligned with the other ones in the Upcoming Events section.-->
                     </div>
-                    </div> <!--End Event #1-->
-                    
-                    <!--Event #2--> <div class="row">
+                </div> <!--End Event #1-->
+                        
+                <div class="row"><!--Event #2--> 
                     <a href="#">
-                    <div class="third">
-                        <img class="square" src="img/bronzecastingpour.jpg" alt="Close up of pouring molten bronze"/>
-                    </div>
+                        <div class="third">
+                            <img class="square" src="img/bronzecastingpour.jpg" alt="Close up of pouring molten bronze"/>
+                        </div>
                     </a>
                     <div class="twothirds">
-                    	<a href="#">
-                        <h4>Bronze Casting Course</h4>
+                        <a href="#">
+                            <h4>Bronze Casting Course</h4>
                         </a>
                         <h4>Pratt Fine Art Center</h4>
                         <h4>February 25-April 4 | Thursdays | 6-10pm</h4>
                         <p>Learn the ancient 'lost wax' casting process. First, you'll learn basic moldmaking to duplicate a design in wax. This wax copy is then 'invested' in a plaster and sand mixture. Then the wax will be burned out of the plaster, leaving a void to be filled with bronze.</p>
                     </div>
-                    </div> <!--End Event #2-->
-    
-                    <!--Event #3--> <div class="row">
+                </div> <!--End Event #2-->
+        
+                <div class="row"><!--Event #3-->
                     <a href="#">
-                    <div class="third">
-                        <img class="square" src="img/SunMu_KimJong-Il.jpg" alt="Sun Mu's painting called Kim Jong-Il"/>
-                    </div>
+                        <div class="third">
+                            <img class="square" src="img/SunMu_KimJong-Il.jpg" alt="Sun Mu's painting called Kim Jong-Il"/>
+                        </div>
                     </a>
                     <div class="twothirds">
-                    	<a href="#">
-                        <h4><span class="italic">I Am Sun Mu</span> Film Screening</h4>
-                     	</a>
+                        <a href="#">
+                            <h4><span class="italic">I Am Sun Mu</span> Film Screening</h4>
+                         </a>
                         <h4>Asian Art Museum</h4>
                         <h4>March 3 | 7-8:30pm</h4>
                         <p>After fleeing his native North Korea to defect to the south, Sun Mu works under a defiant alias meaning “no boundaries” to criticize the repressive regime. A former propaganda artist, he subverts familiar images which once glorified the leadership, transforming them into satirical political pop art. Offered an unlikely solo exhibition in China, the anonymous artist prepares his show undercover, potentially risking his own freedom and safety to expose the truth through art.</p>
                     </div>
-                    </div> <!--End Event #3-->
-  
-              <a class="button" href="#"> 
-        		<h5>Full Calendar</h5>  
-       		 </a>
+                </div> <!--End Event #3-->
+      
+                <a class="button" href="#"> 
+            		<h5>Full Calendar</h5>  
+           		</a>
 
             </div>
+        </div>
+    </div>
+             <!--Closing the Upcoming Event section.-->
+
+
+    <!--this div is for the Map section."-->
+    <div class="row">
+        <div class="whole">
+            <div class="grayarea">
+        	   <h2>Locations</h2>
+                
+                <!--insert location information here-->
+                
         	</div>
-            </div>
-         <!--Closing the Upcoming Event section.-->
-
-
-<!--this div is for the Map section."-->
-    	<div class="row">
-    	   <div class="whole">
-                <div class="grayarea">
-    	           <h2>Locations</h2>
-            
-            <!--insert location information here-->
-            
-    	       </div>
-            </div>
-        </div>	
-    
-    <footer> <!--Starting footer, img tags will be for SM icons-->
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-    </footer>
+        </div>
+    </div>	
+        
+    <div class="row">
+        <div class="whole">
+            <footer> <!--Starting footer, img tags will be for SM icons-->
+                <div class="footer_img">
+                    <img src="img/twitter.svg" alt="twitter">
+                    <img src="img/facebook.svg" alt="facebook">
+                    <img src="img/instagram.svg" alt="instagram">
+                </div>
+            </footer>
+        </div>
+    </div>  
 
 
 </body>

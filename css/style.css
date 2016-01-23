@@ -63,25 +63,30 @@ table {
 
 
 /*BEGIN basic structural divs*/
+ 
+ * {
+ 	box-sizing: border-box;
+ }
 
 .row {
-	max-width: 600px;
-	box-sizing: border-box;
+	width: 100%;
+	margin: auto;
+	max-width: 1400px;
 	clear: both;
-	margin: none;
+	background: red; /*background is red for visibility only, 
+	can be reverted to white after build is done */
 	}
 
 
 .whole, .half, .half_last, .third, .third_last, .twothirds {
-	box-sizing: border-box;
+	
 	margin-bottom: 20px;
 	}
 
 .pad_top {
-		padding-top:100px;
+		padding-top: 180px;
 		margin-bottom: 0px;
 		margin-top: 0px;
-		padding: none;
 		}
 
 .whole {
@@ -118,8 +123,8 @@ header {
 	width: 100%;
 	left: 0;
 	top: 0;
-	background-color: #ea3b3e;
-	padding: 20px;
+	background-color: #ffffff;
+	padding: 0px;
 	z-index: 10;
 	}
 
@@ -130,7 +135,7 @@ img {
 	}
 
 img #hero {
-	margin-top: 200px; /*Once we have the header just like we want it, we should adjust this number so that the hero image sits exactly right below the header instead of leaving a white gap between the header and it and also not getting stuck behind the header where we can't see the whole header. */
+	margin-top: 200px; 
 	} 
 	
 .artwalk {
@@ -142,9 +147,227 @@ img #hero {
 	margin-bottom: 20px;
 	position: relative;
 	}
-	
-/* don't forget to style the nav here. */
+/* logo styles */
 
+.logo_mobile {
+	position: fixed;
+	width: 100px;
+    left: 0;
+    top: 0;
+    text-align: left;
+    padding: 20px;
+ 	display: none;
+}
+
+.logo_tablet {
+	position: fixed;
+	width: 150px;
+    left: 0;
+    top: 0;
+    text-align: left;
+    padding: 20px;
+ 	display: none;
+}
+
+.logo_desktop {
+	position: fixed;
+	width: 400px;
+    left: 0;
+    top: 0;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 20px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+
+/*end logo styles*/	
+
+/* seach styles */
+.search-field-container { position: relative; }
+
+.search-field { 
+	width: 70%; 
+	position: absolute; 
+	right: 0; 
+	top: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.search-field:focus { 
+	width: 100%; 
+}
+
+
+/* Making it pretty */
+/*body{ background-color: #f5f5f5; }*/
+
+.search_bar {
+	width: 40%;
+	float: right;
+}
+
+.search-field-container{ 
+	display: block; 
+	float: left; 
+	width: 80%; 
+	height: 35px; 
+}
+
+.search-form { 
+	width: 100%; 
+	margin: 40px auto; 
+	float: right;
+}
+
+.search-field { 
+	background-color: #fff; 
+	font-size: 14px; 
+	padding: 8px; 
+	border: 1px 
+	solid #ccc; 
+	outline: none; 
+	-moz-border-radius: 4px; 
+	border-radius: 4px; 
+}
+
+/* end search styles */
+
+/* nav styles */
+
+nav {
+	margin-top: 120px;
+	width: 100%;
+	height: 60px;
+	background: #000;
+}
+
+ul {
+	text-align: center;
+}
+
+
+ul li {
+	font: 13px Montserrat, 'Helvetica', sans-serif;
+	-webkit-transition: padding .05s linear;
+	-moz-transition: padding .05s linear;
+	-ms-transition: padding .05s linear;
+	-o-transition: padding .05s linear;
+	transition: padding .05s linear;
+}
+
+.subnav {
+	display: none;
+}/*turn this back on when you get a suitable responsive nav strategy*/
+
+.drop {
+	position: relative;
+	width: 10%; /*applying same container width maybe perentage instead*/
+
+}
+.mainnav {
+	position: relative;
+	width: 10%; /*applying same container width maybe perentage instead*/
+	}
+
+ul li {
+	display: inline-block;
+}
+ul li a {
+	text-align: center;
+	line-height: 60px;
+	height: 80px;
+	color: #777;
+	padding: 0px 5px;
+	-webkit-transition: all .1s ease-out;
+	-moz-transition: all .1s ease-out;
+	-ms-transition: all .1s ease-out;
+	-o-transition: all .1s ease-out;
+	transition: all .1s ease-out;
+}
+ul li a:hover {
+	color: #eee;
+}
+
+ul li:hover a { color: #ea3b3e; }
+ul li:hover .dropdownContain { top: 65px; }
+ul li:hover .underline { border-bottom-color: #777; }
+ul li:hover .dropOut { opacity: 1; margin-top: 8px; }
+
+
+/*DEPRECATED STYLES shit ain't responsive! */
+
+/*.dropOut .triangle {
+	width: 10%;
+	height: 0;
+	position: absolute;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid white;
+	top: -8px;
+	left: 50%;
+	margin-left: -8px;
+}*/
+
+/*.dropdownContain {
+	width: 10%;
+	position: relative;
+	z-index: 2;
+	left: 10%;
+	float: left;
+}*/
+
+/*.dropOut {
+	width: 10%;
+	background: white;
+	float: left;
+	position: relative;
+	margin-top: 0px;
+	opacity: 0; 
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 6px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 1px 6px rgba(0,0,0,.15);
+	box-shadow: 0 1px 6px rgba(0,0,0,.15);
+	-webkit-transition: all .1s ease-out;
+	-moz-transition: all .1s ease-out;
+	-ms-transition: all .1s ease-out;
+	-o-transition: all .1s ease-out;
+	transition: all .1s ease-out;
+}*/
+
+/*.dropOut ul {
+	float: left;
+	padding:  0;
+}
+.dropOut ul li {
+	text-align: center;
+	float: none;
+	width: 120%;
+	padding: 20px;
+	margin: 0px 10px;
+	color: white;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-transition: background .1s ease-out;
+	-moz-transition: background .1s ease-out;
+	-ms-transition: background .1s ease-out;
+	-o-transition: background .1s ease-out;
+	transition: background .1s ease-out;
+}*/
+
+/*.dropOut ul li:hover {
+	background: black;
+}*/
+
+
+
+/* end nav styles */
 		
 .grayarea {
 	background-color: #dbdcde;
@@ -164,17 +387,20 @@ img #hero {
 	margin-top: -25px;
 	}
 
+
 h1 {
 	position: fixed;
-	width: 100%;
+	width: 50px;
     left: 0;
     top: 0;
     text-align: left;
     padding: 20px;
-	font-family: 'Montserrat', sans;
+    display: none;
+    text-indent: -9999px;
+	/*font-family: 'Montserrat', sans;
 	font-size: 40;
 	font-weight: 700;
-	color: white;
+	color: white;*/
 	}
 	
 h2 {
@@ -196,12 +422,11 @@ h3 {
 	color: #6d6e70;
 	}	
 
-h3.typeover {
+h3 .typeover {
 	display: block;
 	width: 100%;
 	height:	auto;
 	margin: 0;
-	align: center;
 	box-sizing: border-box;
 	z-index: 5;
 	padding: 10px;
@@ -263,7 +488,6 @@ a:hover {
 	margin-right: auto;
 	margin-left:auto;
 	clear: both;
-	align: center;
 	box-sizing: border-box;
 	text-align: center;
 	padding: 10px;
@@ -275,17 +499,18 @@ a.button:hover {
 	color: white;
 	}
 	
+
 /*These are for the slides. */
 
 /* for slides that have been navigated past the current*/
-.css-slider .slide: focus~.slide {
+.css-slider .slide:focus ~ .slide {
 	padding-left: 40px;
 	padding-right: 0;
 	left: 0;
 	right: 40px;
 	}
 	
-.css-slider.slide: focus, .css-slider.slide: focus: hover, .css-slider.slide: last-child, .css-slider:last-child:hover {
+.css-slider .slide:focus, .css-slider .slide:focus:hover, .css-slider .slide:last-child, .css-slider:last-child:hover {
 	left: 40px; right: 40px;
 	padding-left: 0;
 	padding-right: 0;
@@ -294,7 +519,7 @@ a.button:hover {
 	cursor: default;
 }
 
-.css-slider.slide {
+.css-slider .slide {
 	display: block;
 	position: absolute;
 	left: 40px;
@@ -305,4 +530,123 @@ a.button:hover {
 	padding-right: 0;
 	z-index: 100;
 	outline: 0;
+}
+
+/* footer styles */
+
+.row .whole footer {
+	background-color: #dbdcde;
+	padding-bottom: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	margin-top: -25px;
+}
+
+footer img {
+
+	width: 30px;
+	float: left;
+}
+
+.footer_img {
+	margin: auto;
+	width: 60%;
+	padding: 10px;
+}
+/* Media Queries here. */
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+	/* logo styles */
+
+.logo_mobile {
+	position: fixed;
+	width: 100px;
+    left: 0;
+    top: 0;
+    text-align: left;
+    padding: 20px;
+ 	display: none;
+}
+
+.logo_tablet {
+	position: fixed;
+	width: 250px;
+    left: 0;
+    top: 0;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-right: 20px;
+    padding-left: 10px;
+    display: inline;
+ 	
+}
+
+.logo_desktop {
+	position: fixed;
+	width: 400px;
+    left: 0;
+    top: 0;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 20px;
+    padding-right: 20px;
+    padding-left: 10px;
+    display: none;
+}
+
+
+/*end logo styles*/	
+
+}
+
+@media screen and (max-width: 768px) {
+	.search_bar {
+		width: 60%;
+	}
+
+	.logo_mobile {
+	position: fixed;
+	width: 100px;
+    left: 0;
+    top: 0;
+    text-align: left;
+    margin-top: 4px;
+    margin-left: 20px;
+    padding-right: 20px;
+    padding-left: 10px;
+    display: inline;
+ 	
+}
+
+	.logo_tablet {
+	position: fixed;
+	width: 150px;
+    left: 0;
+    top: 0;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 20px;
+    padding-right: 20px;
+    padding-left: 10px;
+    display: none;
+ 	
+}
+
+	.logo_desktop {
+	position: fixed;
+	width: 400px;
+    left: 0;
+    top: 0;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 20px;
+    padding-right: 20px;
+    padding-left: 10px;
+    display: none;
+}
+
+
+
 }
