@@ -2,18 +2,24 @@
 <html>
 <head>
 <meta charset="UTF-8">
-
 <!--the below items connect to google fonts.-->
 <link href='https://fonts.googleapis.com/css?family=Lora:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Arts Guide Northwest</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <!--I am going to try to code for mobile first.-->
 <link href="css/style.css" rel="stylesheet" type="text/css">
-
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
 </head>
 
 
@@ -26,6 +32,7 @@
     h5 is for a clickable button.
     -->
     
+<<<<<<< HEAD
     <header>
         <h1>Arts Guide Northwest</h1>
         <div class="logo_mobile"> 
@@ -165,6 +172,133 @@
                 </a>
           
             </div> 
+=======
+<header>
+    <div class="whole"> <!--HEY DAN: We talked about programming the logo as responsive text rather than making an image. I've put the text in here as the placeholder, but if you could style the h1 or add whatever needs to happen to make that work, that would be super since you have been primarily designing the logo.-->
+<<<<<<< HEAD
+    <h1>Arts Guide Northwest</h1> 
+    
+    <form class="search">
+    
+    </form>
+    
+=======
+        <h1>Arts Guide Northwest</h1> 
+
+>>>>>>> origin/gh-pages
+    </div>
+    <!--add the search bar and the nav below here-->
+    <div class="">
+        <nav id="nav">
+            <ul> <!--UL container for main nav-->
+                <li id="mainnav">
+                    <a href="">Galleries</a>
+                        <ul id="subnav">
+                            <li><a href="">Downtown</a></li>
+                            <li><a href="">Pioneer Square</a></li>
+                            <li><a href="">Capitol Hill</a></li>
+                            <li><a href="">Belltown</a></li>
+                        </ul>
+                </li>
+
+                <li id="mainnav">
+                    <a href="">Museums</a>
+                        <ul id="subnav">
+                            <li><a href="https://henryart.org/">Henry</a></li>
+                            <li><a href="http://fryemuseum.org/">Frye</a></li>
+                            <li><a href="http://seattleartmuseum.org/">SAM</a></li>
+                            <li><a href="http://www.wingluke.org/">Wing Luke</a></li>
+                        </ul>
+                </li>
+
+                <li id="mainnav">
+                    <a href="">Events</a>
+                        <ul id="subnav">
+                            <li><a href="">Downtown</a></li>
+                            <li><a href="">Pioneer Square</a></li>
+                            <li><a href="">Capitol Hill</a></li>
+                            <li><a href="">Belltown</a></li>
+                        </ul>
+                </li>
+
+                <li id="mainnav">
+                    <a href="">Resources</a>
+                        <ul id="subnav">
+                            <li><a href="">Artists</a></li>
+                            <li><a href="http://www.cornish.edu/">Cornish</a></li>
+                            <li><a href="http://www.pnca.edu/">PNCA</a></li>
+                            <li><a href="http://www.pratt.org/">Pratt</a></li>
+                        </ul>
+                </li>
+                
+                <li><a href="">Journal</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Contribute</a></li>
+            </ul>
+
+        </nav>
+   	</div>
+</header>
+
+<!--This is attempting to eventually be a rotating hero image.-->
+	<div class="row pad_top">
+    <div class="whole">
+    <img id="hero" src="img/JesseLinkin_Chimp.jpg" alt="JesseLinkin's of a chimpanzee with an apple"/>
+    </div>
+    </div> <!--End Hero Image-->
+
+<!--this div is for the Art Walk section.-->
+    	<div class="row">
+    	<div class="whole">
+        <div class="grayarea">
+    		<h2>Art Walks</h2>
+    		<h3>Second Saturday</h3> 
+   		 	<h3>February 13, 2016</h3> 
+            
+    		<!--begin carousel. I got this carousel by inserting straight from dreamweaver and then deleting a bunch of unnecessary stuff. feel free to edit if you find problems!-->
+          <div id="carousel1" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel1" data-slide-to="1"></li>
+                <li data-target="#carousel1" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+               		 <div class="artwalk">
+        				<a href="#">
+        				<img src="img/georgetownseattle.jpg" alt="Brick building in Seattle's Georgetown Neighborhood" class="center-block">
+                   		 <h3 class="typeover">Georgetown Art Attack</h3>
+          				</a>
+                  	</div>
+                </div>
+                <div class="item">
+                	<div class="artwalk">
+                    	<a href="#">
+                		<img src="img/ballardseattle.jpg" alt="Chittenden Locks in Seattle's Ballard Neighborhood" class="center-block">
+                    	<h3 class="typeover">Ballard Artwalk</h3>
+                  		</a>
+                 	 </div>
+                </div>
+                <div class="item">
+                	<div class="artwalk">
+                    <a href="#">
+                <img src="img/centraldistrictseattle.jpg" alt="Ernestine Anderson mural from the Jackson Street Music History Project in Seattle's Central District" class="center-block">
+                    <h3 class="typeover">Central District Art Walk</h3>
+                    </a>
+                    </div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel1" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a></div>
+  <!--end carousel-->          
+
+           
+        <a class="button" href="#"> 
+   		<h5>More Art Walk Dates</h5>  
+        </a>
+      
+        </div> 
+>>>>>>> origin/gh-pages
         </div>
     </div><!--Ending the Art Walk Section-->
 
@@ -243,6 +377,7 @@
                 <!--insert location information here-->
                 
         	</div>
+<<<<<<< HEAD
         </div>
     </div>	
         
@@ -257,7 +392,147 @@
             </footer>
         </div>
     </div>  
+=======
+<<<<<<< HEAD
+            </div> <!--Closing the Upcoming Event section.-->
+=======
+            </div>
+         <!--Closing the Upcoming Event section.-->
+>>>>>>> origin/gh-pages
 
 
+<!--this div is for the Map section."-->
+    	<div class="row">
+    	   <div class="whole">
+                <div class="grayarea">
+    	           <h2>Locations</h2>
+            
+            <!--Location #1--><div class="row">
+              <a href="http://tklofts.com/tk-studios/">
+                    <div class="third">
+                        <img class="square" src="img/JodyJoldersma_TheAscent.jpeg" alt="Painting of creatures by Jody Joldersma called The Ascent"/>
+              </div>
+                    </a>
+                    <div class="twothirds">
+                    	<a href="http://tklofts.com/tk-studios/">
+                        <h4>TK Studios</h4>
+                        </a>
+                        <h4>306 S. Washington</h4>
+                      	<h4>Seattle, WA 98104</h4>
+                        <a href="http://tklofts.com/tk-studios/">
+                        <h4>tklofts.com</h4>
+                        </a>
+                    </div>
+                    </div> <!--End Location #1-->
+         
+            <!--Location #2--><div class="row">
+              <a href="http://www.platformgallery.com/current.html">
+                    <div class="third">
+                        <img class="square" src="img/AdamEkberg_Occurance2.jpg" alt="Photograph of milk splashing by Adam Ekberg called Occurance2"/>
+              </div>
+              </a>
+                    <div class="twothirds">
+                    	<a href="http://www.platformgallery.com/current.html">
+                        <h4>Platform Gallery</h4>
+                        </a>
+                        <h4>114 Third Avenue S.</h4>
+                        <h4>Seattle, WA 98104</h4>
+                        <a href="http://www.platformgallery.com/current.html">
+                        <h4>platformgallery.com</h4>
+                        </a>
+                    </div>
+                    </div> <!--End Location #2-->
+            
+            <!--Location #3--><div class="row">
+              <a href="http://www.ggibsongallery.com/">
+                    <div class="third">
+                        <img class="square" src="img/CableGriffith_MountainStream.jpg" alt="Winding river going down a mountain by Cable Griffith called Mountain Stream"/>
+              </div>
+              </a>
+                    <div class="twothirds">
+                    	<a href="http://www.ggibsongallery.com/">
+                        <h4>G. Gibson Gallery</h4>
+                        </a>
+                        <h4>300 S. Washington St.</h4>
+                        <h4>Seattle, WA 98104</h4>
+                        <a href="http://www.ggibsongallery.com/">
+                        <h4>ggibsongallery.com</h4>
+                        </a>
+                    </div>
+                    </div> <!--End Location #3-->
+            
+            
+            <!--Location #4--><div class="row">
+              <a href="http://soilart.org/">
+                    <div class="third">
+                        <img class="square" src="img/NolaAvienne_HairpieceforBjork.jpeg" alt="Iron filing sculpture by Nola Avienne called Hairpiece for Bjork"/>
+              </div>
+              </a>
+                    <div class="twothirds">
+                    	<a href="http://soilart.org/">
+                        <h4>SOIL Gallery</h4>
+                        </a>
+                        <h4>112 Third Avenue S.</h4>
+                        <h4>Seattle, WA 98104</h4>
+                        <a href="http://soilart.org/">
+                        <h4>soilart.org</h4>
+                        </a>
+                    </div>
+                    </div> <!--End Location #4-->
+            
+    	       </div>
+            </div>
+        </div>	
+<<<<<<< HEAD
+        
+<!--this div is for the Articles section.-->
+    	<div class="row">
+    	<div class="whole">
+        <div class="whitearea">
+   		  <h2>Latest News</h2>
+    		
+
+          <div class="newsarticle">
+            <a href="#">
+            <img src="img/ChrisJordan_CellPhones.jpeg" alt="Photograph of hundreds of discarded cell phones by environmental artist Chris Jordan"/>             
+            <!-- We had talked about this being a sort of carosel/slider just like the Artwalk section but with the addition of paragraph-style text. Not sure why the margins aren't matching the Art Walk section. Will have to double-check the CSS section.-->
+            <h4>Interview: Environmental Artist Chris Jordan Talks Sustainability</h4>
+          	</a>   
+            <p><span class="italic"> January 19, 2016</span></p>        
+          	<p>Around the world there are hundreds of millions of discarded mobile phones lying around in drawers and boxes, displaced by the bigger screen or better camera of the latest version. But truth be told, even if we were talking about hundreds of billions it would be unlikely to elicit a much different response, because ridiculously big numbers are ridiculously big numbers, right? Seattle-based photographer and activist Chris Jordan is on a mission to make these measures of consumerism manifest through visual art and, as he explained to Gizmag, bridge the disconnect between our mass consumption and its largely invisible consequences. </p>
+            <a href="#">Read more...</a>
+            <!--here is a link to the full text of this article if needed: http://www.gizmag.com/environmental-artwork-phones-protest-consumerism-e-waste/30860/-->
+            </div>
+            
+         <!--need to add a couple more articles that will be good for this section for the swipe/scroll. here are a couple of options:
+   http://www.seattletimes.com/life/lifestyle/culture-clash-on-capitol-hill/
+   http://www.4culture.org/2015/12/grade-and-griffith-to-create-art-for-sea-tac/
+   http://www.thestranger.com/visual-art/features/2016/01/20/23447404/one-gallery-two-exhibitions-multiple-perspectives-on-pain
+   http://www.seattleweekly.com/arts/962546-129/bringing-black-back-with-the-new
+http://www.seattleweekly.com/arts/962059-129/the-sklallam-artist-behind-marvels-indigenous
+-->
+        <a class="button" href="#"> 
+   		<h5>More News</h5>  
+        </a>
+      
+        </div> 
+        </div>
+   		</div><!--Ending the Articles Section-->
+
+
+=======
+    
+    <footer> <!--Starting footer, img tags will be for SM icons-->
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+    </footer>
+>>>>>>> origin/gh-pages
+>>>>>>> origin/gh-pages
+
+
+<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
 </body>
 </html>

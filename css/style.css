@@ -68,6 +68,10 @@ table {
  	box-sizing: border-box;
  }
 
+* {
+	box-sizing: border-box;
+}
+
 .row {
 	width: 100%;
 	margin: auto;
@@ -123,8 +127,13 @@ header {
 	width: 100%;
 	left: 0;
 	top: 0;
+<<<<<<< HEAD
 	background-color: #ffffff;
 	padding: 0px;
+=======
+	background-color: white;
+	padding: 20px;
+>>>>>>> origin/gh-pages
 	z-index: 10;
 	}
 
@@ -139,6 +148,10 @@ img #hero {
 	} 
 	
 .artwalk {
+	position: relative;
+	}
+	
+.newsarticle {
 	width: 90%;
 	height:	auto;
 	margin-right: 5%;
@@ -147,6 +160,7 @@ img #hero {
 	margin-bottom: 20px;
 	position: relative;
 	}
+<<<<<<< HEAD
 /* logo styles */
 
 .logo_mobile {
@@ -216,6 +230,10 @@ img #hero {
 	width: 80%; 
 	height: 35px; 
 }
+=======
+	
+/* don't forget to style the nav. */
+>>>>>>> origin/gh-pages
 
 .search-form { 
 	width: 100%; 
@@ -395,12 +413,19 @@ h1 {
     top: 0;
     text-align: left;
     padding: 20px;
+<<<<<<< HEAD
     display: none;
     text-indent: -9999px;
 	/*font-family: 'Montserrat', sans;
 	font-size: 40;
 	font-weight: 700;
 	color: white;*/
+=======
+	font-family: 'Montserrat', sans;
+	font-size: 40px;
+	font-weight: 700;
+	color: #ea3b3e;
+>>>>>>> origin/gh-pages
 	}
 	
 h2 {
@@ -434,7 +459,7 @@ h3 .typeover {
 	background-color: rgba(0,0,0,0.6);
 	color: white;
 	position: absolute;
-	bottom: 25px;
+	bottom: 30px;
 	}
 	
 a h3:hover {
@@ -460,7 +485,6 @@ h5 {
 	color: white;
 	}
 
-
 p {
 	text-align: left;
     font-family: 'Lora', serif;
@@ -477,14 +501,13 @@ p {
 a {
 	text-decoration: none;
 	}
-
 a:hover {
 	color: #ea3b3e;
 	}
 	
 .button {
 	display: block;
-	max-width: 40%;
+	max-width: 50%;
 	margin-right: auto;
 	margin-left:auto;
 	clear: both;
@@ -497,6 +520,7 @@ a:hover {
 a.button:hover {
 	background-color: #ea3b3e;
 	color: white;
+<<<<<<< HEAD
 	}
 	
 
@@ -650,3 +674,6 @@ footer img {
 
 
 }
+=======
+	}
+>>>>>>> origin/gh-pages
