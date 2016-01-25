@@ -102,6 +102,11 @@ table {
 	width: 48%;
 	margin-right: 4%;
 	}
+
+.half_last {
+	float: left;
+	width: 48%;
+}
 	
 .third {
 	float: left;
@@ -255,6 +260,7 @@ nav {
 	width: 100%;
 	height: 60px;
 	background: #000;
+	overflow: auto;
 }
 
 ul {
@@ -387,7 +393,8 @@ ul li:hover .dropOut { opacity: 1; margin-top: 8px; }*/
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 10px;
-	margin-top: -25px;  /* I don't know why you need this negative number for a margin here, but if you don't do it, then there is a weird white gap between the sections. Maybe there is a more useful/elegant solution? */
+	margin-top: -25px; 
+	overflow: auto; /* I don't know why you need this negative number for a margin here, but if you don't do it, then there is a weird white gap between the sections. Maybe there is a more useful/elegant solution? */
 }
 
 .whitearea {
@@ -548,27 +555,33 @@ a.button:hover {
 
 /* footer styles */
 
-.row .whole footer {
+footer {
 	background-color: black;
-	padding-bottom: 40px;
-	padding-left: 10px;
-	padding-right: 10px;
 	padding-top: 10px;
-	margin-top: px;
+	overflow: auto;
+
 }
 
 
 .footer_img {
-	margin: auto;
-	width: 60%;
+	margin: 0 auto;
+	width: 50%;
 	padding: 10px;
+	overflow: auto;
+}
+
+.footer_img a {
+	padding: 20px;
 }
 
 .footer_img img {
-	width: 60px;
+	margin: 0 auto;
+	max-width: 60px;
+	
+	
 }
 
-.footer_img img:hover { color: #ea3b3e;}
+.footer_img a:hover { color: #ea3b3e;}
 
 /* Media Queries here. */
 
@@ -618,6 +631,7 @@ a.button:hover {
 }
 
 @media screen and (max-width: 768px) {
+	
 	.search_bar {
 		width: 60%;
 	}
@@ -663,3 +677,6 @@ a.button:hover {
     display: none;
 }
 
+	.half .half_last {
+	
+}
