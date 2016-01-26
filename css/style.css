@@ -68,10 +68,6 @@ table {
  	box-sizing: border-box;
  }
 
-* {
-	box-sizing: border-box;
-}
-
 .row {
 	width: 100%;
 	margin: auto;
@@ -82,8 +78,19 @@ table {
 	}
 
 
+header {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background-color: #ffffff;
+	padding: 0px;
+	background-color: white;
+	z-index: 10;
+	}
+
+
 .whole, .half, .half_last, .third, .third_last, .twothirds {
-	
 	margin-bottom: 20px;
 	}
 
@@ -101,6 +108,8 @@ table {
 	float: left;
 	width: 48%;
 	margin-right: 4%;
+	padding-left: 10px;
+	padding-right: 10px;
 	}
 
 .half_last {
@@ -112,7 +121,7 @@ table {
 	float: left;
 	width: 31%;
 	margin-right: 3.5%;
-} /*31 + 31 + 31 + 3.5 + 3.5 = 100*/
+}
 
 .third_last {
 	float: left;
@@ -127,18 +136,6 @@ table {
 	}
 	
 	
-header {
-	position: fixed;
-	width: 100%;
-	left: 0;
-	top: 0;
-	background-color: #ffffff;
-	padding: 0px;
-	background-color: white;
-	/*padding: 20px; don't think we need padding on this element */
-	z-index: 10;
-	}
-
 img {
 	max-width: 100%;
 	width:100%;
@@ -162,6 +159,8 @@ img #hero {
 	margin-bottom: 20px;
 	position: relative;
 	}
+
+
 /* logo styles */
 
 .logo_mobile {
@@ -195,9 +194,8 @@ img #hero {
     padding-right: 20px;
     padding-left: 10px;
 }
-
-
 /*end logo styles*/	
+
 
 /* seach styles */
 .search-field-container { position: relative; }
@@ -231,8 +229,6 @@ img #hero {
 	width: 80%; 
 	height: 35px; 
 }
-	
-/* don't forget to style the nav. */
 
 .search-form { 
 	width: 100%; 
@@ -252,6 +248,7 @@ img #hero {
 }
 
 /* end search styles */
+
 
 /* nav styles */
 
@@ -445,7 +442,7 @@ h3 {
 	color: #6d6e70;
 	}	
 
-h3 .typeover {
+.typeover {
 	display: block;
 	width: 100%;
 	height:	auto;
@@ -468,13 +465,23 @@ h4 {
 	text-align: left;
 	margin-bottom: 5px;
     font-family: 'Montserrat', sans;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: 700;
 	color: #6d6e70;
 	}	
 a h4:hover {
 	color: #ea3b3e;
 	}
+	
+.details {
+	text-align: left;
+	margin-bottom: 5px;
+	font-family: 'Montserrat', sans;
+	font-size: 14px;
+	font-weight: 400;
+	color: #ea3b3e;
+	font-style: italic;
+}	
 
 h5 {
 	font-family: 'Montserrat', sans;
@@ -505,7 +512,7 @@ a:hover {
 	
 .button {
 	display: block;
-	max-width: 50%;
+	max-width: 25%;
 	margin-right: auto;
 	margin-left:auto;
 	clear: both;

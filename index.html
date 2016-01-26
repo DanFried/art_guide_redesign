@@ -12,7 +12,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Arts Guide Northwest</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--I am going to try to code for mobile first.-->
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
@@ -53,6 +52,7 @@
                 <img src="img/ag_nw_logo_desktop.svg" alt="Art Guide Northwest Logo">
             </a>
         </div>
+        
         <!--add the search bar and the nav below here-->
         <div class="search_bar">    
             <form class="search-form">
@@ -185,60 +185,79 @@
             <div class="whitearea">
             	<h2>Upcoming Events</h2>
                 
-                <div class="row"><!--Event #1-->
-                    <a href="#">
-                        <div class="third">
-                            <img class="square" src="img/KehindeWiley_RandersonRomualdoCordeiro.jpg" alt="Kehinde Wiley's painting called Randerson Romualdo Cordeiro"/>
+                    <div class="half">
+                    <!--Event #1--><a href="#">
+                        <div class="half">
+                            <img src="img/KehindeWiley_RandersonRomualdoCordeiro.jpg" alt="Kehinde Wiley's painting called Randerson Romualdo Cordeiro"/>
                         </div>
                     </a>
-                    <div class="twothirds">
+                    <div class="half_last">
                         <a href="#">
                             <h4>Kehinde Wiley Exhibition</h4>
                         </a>
-                        <h4>Seattle Art Museum</h4>
-                        <h4>February 11-May 8</h4>
-                        <p>Kehinde Wiley is one of the leading American artists to emerge in the last decade and he has been ingeniously reworking the grand portraiture traditions of Western culture. Wiley’s portraits are highly stylized and staged, and draw attention to the dialectic between a history of aristocratic representation and the portrait as a statement of power and the individual’s sense of empowerment.</p> <!--I don't know why this paragraph isn't aligned with the other ones in the Upcoming Events section.-->
-                    </div>
-                </div> <!--End Event #1-->
-                        
-                <div class="row"><!--Event #2--> 
-                    <a href="#">
-                        <div class="third">
-                            <img class="square" src="img/bronzecastingpour.jpg" alt="Close up of pouring molten bronze"/>
+                        <div class="details"> Seattle Art Museum</div>
+                       <div class="details">February 11-May 8</div>
+                        <p>Kehinde Wiley is one of the leading American artists to emerge in the last decade and he has been ingeniously reworking the grand portraiture traditions of Western culture. Wiley’s portraits are highly stylized and staged, and draw attention to the dialectic between a history of aristocratic representation and the portrait as a statement of power and the individual’s sense of empowerment.</p> 
+                    </div><!--End Event #1-->
+                   </div>
+                    
+                    <div class="half_last">
+                    <!--Event #2--> <a href="#">
+                        <div class="half">
+                            <img  src="img/bronzecastingpour.jpg" alt="Close up of pouring molten bronze"/>
                         </div>
                     </a>
-                    <div class="twothirds">
+                    <div class="half_last">
                         <a href="#">
                             <h4>Bronze Casting Course</h4>
                         </a>
-                        <h4>Pratt Fine Art Center</h4>
-                        <h4>February 25-April 4 | Thursdays | 6-10pm</h4>
+                        <div class="details">Pratt Fine Art Center</div>
+                        <div class="details">February 25-April 4 | Thursdays | 6-10pm</div>
                         <p>Learn the ancient 'lost wax' casting process. First, you'll learn basic moldmaking to duplicate a design in wax. This wax copy is then 'invested' in a plaster and sand mixture. Then the wax will be burned out of the plaster, leaving a void to be filled with bronze.</p>
-                    </div>
-                </div> <!--End Event #2-->
+                    </div><!--End Event #2-->
+                </div> 
+                    
+                 
+                        
+                
         
-                <div class="row"><!--Event #3-->
-                    <a href="#">
-                        <div class="third">
+                <div class="half">
+                <!--Event #3--><a href="#">
+                        <div class="half">
                             <img class="square" src="img/SunMu_KimJong-Il.jpg" alt="Sun Mu's painting called Kim Jong-Il"/>
                         </div>
                     </a>
-                    <div class="twothirds">
+                    <div class="half_last">
                         <a href="#">
                             <h4><span class="italic">I Am Sun Mu</span> Film Screening</h4>
                          </a>
-                        <h4>Asian Art Museum</h4>
-                        <h4>March 3 | 7-8:30pm</h4>
+                        <div class="details">Asian Art Museum</div>
+                        <div class="details">March 3 | 7-8:30pm</div>
                         <p>After fleeing his native North Korea to defect to the south, Sun Mu works under a defiant alias meaning “no boundaries” to criticize the repressive regime. A former propaganda artist, he subverts familiar images which once glorified the leadership, transforming them into satirical political pop art. Offered an unlikely solo exhibition in China, the anonymous artist prepares his show undercover, potentially risking his own freedom and safety to expose the truth through art.</p>
+                    </div><!--End Event #3-->
                     </div>
-                </div> <!--End Event #3-->
+                    
+                   <div class="half_last">
+                   
+                    <!--Event #4--> <a href="#">
+                        <div class="half">
+                            <img src="img/calltoartists.jpg" alt="announcement for call to artists for Bellevue Art Fair"/>
+                        </div>
+                    </a>
+                    <div class="half_last">
+                        <a href="#">
+                            <h4>Call to Artists</h4>
+                        </a>
+                        <div class="details">Bellevue Festival of the Arts</div>
+                        <div class="details">Deadline: March 31, 2016</div>
+                        <p>The Bellevue Festival of the Arts is a juried arts and crafts fair located just across Lake Washington from Seattle. Produced by the Craft Cooperative of the Northwest, and organized by artists, it continues to support many non-profits with its proceeds. Celebrating its 32nd year in 2016, the festival features 200 of the most talented and popular artisans, musicians, and craftspeople from the Northwest and beyond. The Bellevue Festival of the Arts takes place the last full weekend in July in downtown Bellevue, WA.</p>
+                    </div><!--End Event #4-->
+              		 </div> 
       
                 <a class="button" href="#"> 
             		<h5>Full Calendar</h5>  
            		</a>
 
-            </div>
-        </div>
     </div>
              <!--Closing the Upcoming Event section.-->
 
@@ -345,27 +364,52 @@
    		  <h2>Latest News</h2>
     		
 
-          <div class="newsarticle">
+          <!--Article #1--> <div class="newsarticle">
+            <div class="third">
             <a href="#">
             <img src="img/ChrisJordan_CellPhones.jpeg" alt="Photograph of hundreds of discarded cell phones by environmental artist Chris Jordan"/>             
             <!-- We had talked about this being a sort of carosel/slider just like the Artwalk section but with the addition of paragraph-style text. Not sure why the margins aren't matching the Art Walk section. Will have to double-check the CSS section.-->
             <h4>Interview: Environmental Artist Chris Jordan Talks Sustainability</h4>
           	</a>   
-            <p><span class="italic"> January 19, 2016</span></p>        
+           	<div class="details"> January 19, 2016</div>       
           	<p>Around the world there are hundreds of millions of discarded mobile phones lying around in drawers and boxes, displaced by the bigger screen or better camera of the latest version. But truth be told, even if we were talking about hundreds of billions it would be unlikely to elicit a much different response, because ridiculously big numbers are ridiculously big numbers, right? Seattle-based photographer and activist Chris Jordan is on a mission to make these measures of consumerism manifest through visual art and, as he explained to Gizmag, bridge the disconnect between our mass consumption and its largely invisible consequences. </p>
             <a href="#">Read more...</a>
             <!--here is a link to the full text of this article if needed: http://www.gizmag.com/environmental-artwork-phones-protest-consumerism-e-waste/30860/-->
-            </div>
+           </div> 
+           </div><!--End Article 1-->
             
-         <!--need to add a couple more articles that will be good for this section for the swipe/scroll. here are a couple of options:
-   http://www.seattletimes.com/life/lifestyle/culture-clash-on-capitol-hill/
-   http://www.4culture.org/2015/12/grade-and-griffith-to-create-art-for-sea-tac/
-   http://www.thestranger.com/visual-art/features/2016/01/20/23447404/one-gallery-two-exhibitions-multiple-perspectives-on-pain
+            <!--Article 2--> <div class="newsarticle">
+            <div class="third">
+            <a href="#">
+            <img src="img/JohnCriscitello_ToGetAway.jpg" alt="The artist John Crisscitello placing a sign that says 'We came here to get away from you.'"/>             
+            <h4>Cultures Clash as Gentrification Engulfs Capitol Hill</h4>
+          	</a>   
+            <div class="details"> January 12, 2016</div>       
+          	<p>Nightlife and development on Capitol Hill have become a source of tension for longtime residents, who worry the area is losing its eclectic, artistic character. A rise in hate crime in the area illustrates a growing culture clash on Capitol Hill, a formerly blue-collar neighborhood that became a home for artists and the gay community decades ago and is now in the throes of yet another transformation. Gleaming new apartment buildings and posh eateries, big dance clubs and craft cocktail lounges have replaced quaint auto-row buildings and inexpensive restaurants. If Capitol Hill were a high school, it’d be a classic showdown of jocks and prom queens versus freaks and geeks. Not everyone would call it progress. </p>
+            <a href="#">Read more...</a>
+            <!--here is a link to the full text of this article if needed: http://www.seattletimes.com/life/lifestyle/culture-clash-on-capitol-hill/-->
+           </div> 
+           </div> <!--End Article 2-->
+            
+          <!--Article 2--> <div class="newsarticle">
+            <div class="third_last">
+            <a href="#">
+            <img src="img/gradegriffithseatac.jpg" alt="Abstract sculpture made of an old-growth hemlock tree by John Grade"/>          
+            <h4>Grade and Griffith to Create Art for Sea-Tac</h4>
+          	</a>   
+            <div class="details"> December 17, 2016</div>       
+          	<p>NAs Seattle-Tacoma International Airport and the Port of Seattle Art Program work together to renovate the North Satellite Terminal and the Concourse C Transit Station, a guiding principle has been the creation of an unmistakably Northwest sense of place. You’ve likely visited both locations when traveling with Alaska Airlines—now, we are delighted to announce that new artwork by Northwest artists John Grade and Cable Griffith will greet you there in the coming years. Grade has been selected to create art for a prominent, elevated wall in the North Satellite. It’s the first thing you’ll see as you come up the escalator from the train, and you’ll have the opportunity to explore it from many angles throughout the concourse. Griffith’s work will transform the vertical space between a set of escalators into an art experience that will evolve as you travel between the train and Concourse C above.
+            <!--here is a link to the full text of this article if needed: http://www.4culture.org/2015/12/grade-and-griffith-to-create-art-for-sea-tac/-->
+           </div> 
+           </div> <!--End Article 3-->
+            
+         <!--if we need to add a couple more articles that will be good for this section, here are a couple of options:
+http://www.thestranger.com/visual-art/features/2016/01/20/23447404/one-gallery-two-exhibitions-multiple-perspectives-on-pain
    http://www.seattleweekly.com/arts/962546-129/bringing-black-back-with-the-new
 http://www.seattleweekly.com/arts/962059-129/the-sklallam-artist-behind-marvels-indigenous
 -->
         <a class="button" href="#"> 
-   		<h5>More News</h5>  
+   		<h5>Explore News Journal</h5>  
         </a>
       
         </div> 
