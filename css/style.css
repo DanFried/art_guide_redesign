@@ -83,7 +83,6 @@ header {
 	width: 100%;
 	left: 0;
 	top: 0;
-	background-color: #ffffff;
 	padding: 0px;
 	background-color: white;
 	z-index: 10;
@@ -95,7 +94,7 @@ header {
 	}
 
 .pad_top {
-		padding-top: 180px;
+		padding-top: 160px;
 		margin-bottom: 0px;
 		margin-top: 0px;
 		}
@@ -185,7 +184,7 @@ img #hero {
 
 .logo_desktop {
 	position: fixed;
-	width: 400px;
+	width: 500px;
     left: 0;
     top: 0;
     text-align: left;
@@ -260,6 +259,8 @@ nav {
 	overflow: auto;
 }
 
+/* deprecated nav styles
+
 ul {
 	text-align: center;
 }
@@ -274,19 +275,6 @@ ul li {
 	transition: padding .05s linear;
 }
 
-.subnav {
-	display: none;
-}/*turn this back on when you get a suitable responsive nav strategy*/
-
-.drop {
-	position: relative;
-	width: 10%; /*applying same container width maybe perentage instead*/
-
-}
-.mainnav {
-	position: relative;
-	width: 10%; /*applying same container width maybe perentage instead*/
-	}
 
 ul li {
 	display: inline-block;
@@ -308,77 +296,8 @@ ul li a:hover {
 }
 
 ul li:hover a { color: #ea3b3e; }
-/*ul li:hover .dropdownContain { top: 65px; }
-ul li:hover .underline { border-bottom-color: #777; }
-ul li:hover .dropOut { opacity: 1; margin-top: 8px; }*/
 
-
-/*DEPRECATED STYLES shit ain't responsive! */
-
-/*.dropOut .triangle {
-	width: 10%;
-	height: 0;
-	position: absolute;
-	border-left: 8px solid transparent;
-	border-right: 8px solid transparent;
-	border-bottom: 8px solid white;
-	top: -8px;
-	left: 50%;
-	margin-left: -8px;
-}*/
-
-/*.dropdownContain {
-	width: 10%;
-	position: relative;
-	z-index: 2;
-	left: 10%;
-	float: left;
-}*/
-
-/*.dropOut {
-	width: 10%;
-	background: white;
-	float: left;
-	position: relative;
-	margin-top: 0px;
-	opacity: 0; 
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	-webkit-box-shadow: 0 1px 6px rgba(0,0,0,.15);
-	-moz-box-shadow: 0 1px 6px rgba(0,0,0,.15);
-	box-shadow: 0 1px 6px rgba(0,0,0,.15);
-	-webkit-transition: all .1s ease-out;
-	-moz-transition: all .1s ease-out;
-	-ms-transition: all .1s ease-out;
-	-o-transition: all .1s ease-out;
-	transition: all .1s ease-out;
-}*/
-
-/*.dropOut ul {
-	float: left;
-	padding:  0;
-}
-.dropOut ul li {
-	text-align: center;
-	float: none;
-	width: 120%;
-	padding: 20px;
-	margin: 0px 10px;
-	color: white;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	-webkit-transition: background .1s ease-out;
-	-moz-transition: background .1s ease-out;
-	-ms-transition: background .1s ease-out;
-	-o-transition: background .1s ease-out;
-	transition: background .1s ease-out;
-}*/
-
-/*.dropOut ul li:hover {
-	background: black;
-}*/
+end deprecated nav */
 
 
 
@@ -584,15 +503,19 @@ footer {
 .footer_img img {
 	margin: 0 auto;
 	max-width: 60px;
-	
-	
 }
 
-.footer_img a:hover { color: #ea3b3e;}
+.footer_img a {
+	transition: all .5s ease-in-out;
+}
+
+.footer_img a:hover { 
+	color: #ea3b3e;
+}
 
 /* Media Queries here. */
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 801px) and (max-width: 1200px) {
 	/* logo styles */
 
 .logo_mobile {
@@ -637,7 +560,7 @@ footer {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
 	
 	.search_bar {
 		width: 60%;
