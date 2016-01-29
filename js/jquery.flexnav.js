@@ -71,36 +71,36 @@
       }
     };
     resizer = function() {
-      var selector;
-      if ($(window).width() <= breakpoint) {
-        $nav.removeClass("lg-screen").addClass("sm-screen");
-        if (settings.calcItemWidths === true) {
-          $top_nav_items.css('width', '100%');
-        }
-        selector = settings['buttonSelector'] + ', ' + settings['buttonSelector'] + ' .touch-button';
-        $(selector).removeClass('active');
-        return $('.one-page li a').on('click', function() {
-          return $nav.removeClass('flexnav-show');
-        });
-      } else if ($(window).width() > breakpoint) {
-        $nav.removeClass("sm-screen").addClass("lg-screen");
-        if (settings.calcItemWidths === true) {
-          $top_nav_items.css('width', nav_percent);
-        }
-        $nav.removeClass('flexnav-show').find('.item-with-ul').on();
-        $('.item-with-ul').find('ul').removeClass('flexnav-show');
-        resetMenu();
-        if (settings.hoverIntent === true) {
-          return $('.item-with-ul').hoverIntent({
-            over: showMenu,
-            out: resetMenu,
-            timeout: settings.hoverIntentTimeout
-          });
-        } else if (settings.hoverIntent === false) {
-          return $('.item-with-ul').on('mouseenter', showMenu).on('mouseleave', resetMenu);
-        }
-      }
-    };
+  var selector;
+  if ($(window).width() <= 780) {
+    $nav.removeClass("lg-screen").addClass("sm-screen");
+    if (settings.calcItemWidths === true) {
+      $top_nav_items.css('width', '100%');
+    }
+    selector = settings['buttonSelector'] + ', ' + settings['buttonSelector'] + ' .touch-button';
+    $(selector).removeClass('active');
+    return $('.one-page li a').on('click', function() {
+      return $nav.removeClass('flexnav-show');
+    });
+  } else if ($(window).width() > 780) {
+    $nav.removeClass("sm-screen").addClass("lg-screen");
+    if (settings.calcItemWidths === true) {
+      $top_nav_items.css('width', nav_percent);
+    }
+    $nav.removeClass('flexnav-show').find('.item-with-ul').on();
+    $('.item-with-ul').find('ul').removeClass('flexnav-show').hide();
+    resetMenu();
+    if (settings.hoverIntent === true) {
+      return $('.item-with-ul').hoverIntent({
+        over: showMenu,
+        out: resetMenu,
+        timeout: settings.hoverIntentTimeout
+      });
+    } else if (settings.hoverIntent === false) {
+      return $('.item-with-ul').on('mouseenter', showMenu).on('mouseleave', resetMenu);
+    }
+  }
+};
     $(settings['buttonSelector']).data('navEl', $nav);
     touch_selector = '.item-with-ul, ' + settings['buttonSelector'];
     $(touch_selector).append('<span class="touch-button"><i class="navicon">&#9660;</i></span>');
