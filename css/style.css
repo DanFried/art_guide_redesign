@@ -265,7 +265,7 @@ nav {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.15); 
 }
 
-/* deprecated nav styles
+/* deprecated nav styles*/
 
 ul {
 	text-align: center;
@@ -303,10 +303,11 @@ ul li a:hover {
 
 ul li:hover a { color: #ea3b3e; }
 
-end deprecated nav */
+/*end deprecated nav */
 
-/* DAN: this style of commenting seems to be messing up the below styles??! <<<<<<< HEAD
+/* DAN: this style of commenting with all the <<<<<< symbols seems to be messing up the below styles??! <<<<<<< HEAD
 =======*/
+
 .ag_whole {
 	font-weight: 700;
 }
@@ -387,12 +388,16 @@ h3 {
 	box-sizing: border-box;
 	z-index: 5;
 	padding: 10px;
-	text-align: center;
 	background-color: rgba(0,0,0,0.6);
-	color: white;
 	position: absolute;
 	bottom: 30px;
 	}
+		
+.typeover h3, .typeover h4 {
+	text-align: center;
+	color: white;
+	margin-bottom: 6px;
+	}	
 	
 a h3:hover {
 	color: #ea3b3e;
@@ -761,7 +766,7 @@ footer {
 	}
 
 .third {
-	width: 60%;
+	width: 50%;
 	margin-right: 2%;
 	margin-left: 2%;
 	}
@@ -785,6 +790,10 @@ footer {
 
 /*text styles*/
 
+h4 {
+	margin-bottom: 4px;
+	}	
+
 .readmore {
 	color: #ea3b3e
 	}
@@ -792,6 +801,11 @@ footer {
 .button {
 	max-width: 50%;
 	}
-	
+
+a .locinfo {
+	margin-top: 4px;
+	margin-bottom: 20px;
+	color: #ea3b3e;
+}
 	
 } /*end smallest media query*/
