@@ -88,7 +88,7 @@ header {
 	}
 
 
-.whole, .half, .half_last, .third, .third_last, .twothirds {
+.whole, .half, .half_last, .third, .third_last, .twothirds, .fourth, .fourth_third, .fourth_last {
 	margin-bottom: 20px;
 	}
 
@@ -118,7 +118,8 @@ header {
 .third {
 	float: left;
 	width: 31%;
-	margin-right: 3.5%;
+	margin-right: 3%;
+	margin-left: 2%;
 }
 
 .third_last {
@@ -133,6 +134,18 @@ header {
 	margin-right: 0;
 	}
 	
+.fourth, .fourth_third {
+	float: left;
+	width: 23%;
+	margin-right: 2%;
+}
+
+.fourth_last {
+	float: left;
+	width: 23%;
+	margin-right: 2%;
+	}
+
 	
 img {
 	max-width: 100%;
@@ -147,17 +160,10 @@ img #hero {
 .artwalk {
 	position: relative;
 	}
-	
-.newsarticle {
-	width: 90%;
-	height:	auto;
-	margin-right: 5%;
-	margin-left: 5%;
-	margin-top: 10px;
-	margin-bottom: 20px;
-	position: relative;
-	}
 
+.fourth img, .fourth_third img, .fourth_last img {
+	margin-bottom: 10px;
+}
 
 /* logo styles */
 
@@ -195,7 +201,7 @@ img #hero {
 /*end logo styles*/	
 
 
-/* seach styles */
+/* search styles */
 .search-field-container { position: relative; }
 
 .search-field { 
@@ -298,8 +304,6 @@ ul li:hover a { color: #ea3b3e; }
 
 end deprecated nav */
 
-
-
 /* end nav styles */
 		
 .grayarea {
@@ -314,13 +318,15 @@ end deprecated nav */
 
 .whitearea {
 	background-color: white;
-	padding-bottom: 40px;
-	padding-left: 10px;
+	padding-bottom: 60px;
+	padding-left: 20px;
 	padding-right: 10px;
 	padding-top: 10px;
 	margin-top: -25px;
 	}
 
+
+/*text styleS */
 
 h1 {
 	position: fixed;
@@ -353,11 +359,11 @@ h2 {
 
 h3 {
 	text-align: center;
-	margin-bottom: 5px;
+	margin-bottom: 20px;
     font-family: 'Montserrat', sans;
 	font-size: 22px;
 	font-weight: 400;
-	color: #6d6e70;
+	color: black;
 	}	
 
 .typeover {
@@ -381,7 +387,7 @@ a h3:hover {
 	
 h4 {
 	text-align: left;
-	margin-bottom: 5px;
+	margin-bottom: 8px;
     font-family: 'Montserrat', sans;
 	font-size: 18px;
 	font-weight: 700;
@@ -393,7 +399,6 @@ a h4:hover {
 	
 .details {
 	text-align: left;
-	margin-bottom: 5px;
 	font-family: 'Montserrat', sans;
 	font-size: 14px;
 	font-weight: 400;
@@ -401,6 +406,23 @@ a h4:hover {
 	font-style: italic;
 }	
 
+.locinfo {
+	text-align: left;
+	font-family: 'Montserrat', sans;
+	font-size: 14px;
+	font-weight: 400;
+	color: #6d6e70;
+}	
+
+a .locinfo {
+	margin-top: 10px;
+}
+
+
+a .locinfo:hover {
+	color: #ea3b3e;
+	}
+	
 h5 {
 	font-family: 'Montserrat', sans;
 	font-size: 14px;
@@ -415,6 +437,40 @@ p {
 	font-weight: 400;
 	color: black;
 	line-height: 18px;
+	}
+
+.article {
+	overflow: hidden;
+}
+
+.fade {
+	position: relative;
+	height: 288px; /*exactly 16 lines */
+}
+
+.fade:after {
+	content: "";
+  	text-align: right;
+	position: absolute;
+  	bottom: 0;
+  	right: 0;
+  	width: 50%;
+  	height: 18px;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+} /*reference for how to do this is here: https://css-tricks.com/line-clampin/. look for "the fade out way"*/
+
+.readmore {
+	text-align: left;
+    font-family: 'Lora', serif;
+	font-size: 14px;
+	font-weight: 700;
+	font-style: italic;
+	color: #6d6e70;
+	line-height: 18px;
+	}
+
+.readmore:hover {
+	color: #ea3b3e;
 	}
 
 .italic {
@@ -485,7 +541,6 @@ footer {
 	background-color: black;
 	padding-top: 10px;
 	overflow: none;
-
 }
 
 
@@ -543,7 +598,6 @@ footer {
     padding-right: 20px;
     padding-left: 10px;
     display: inline;
- 	
 }
 
 .logo_desktop {
@@ -559,10 +613,48 @@ footer {
     display: none;
 }
 
-
 /*end logo styles*/	
 
+
+/*column styles*/
+
+.third {
+	width: 48%;
+	margin-right: 2%;
+	margin-left: 2%;
+	}
+	
+.fourth {
+	float: left;
+	width: 30.5%;
+	margin-right: 4%;
+	padding: 0;
 }
+
+.fourth_third, .fourth_last {
+	float: left;
+	width: 30.5%;
+	margin-right: 0;
+	padding: 0;
+	}
+	
+.fourth_last {
+	margin-top: 10px;
+}
+
+.fourth_third .fade, .fourth_last .fade {
+	position: relative;
+	height: 0px;
+}
+
+.fourth_third p, .fourth_last p {
+	visibility: hidden;
+}	
+
+/*end column styles*/
+
+
+} /*end media query for the tablet*/
 
 @media screen and (max-width: 800px) {
 	
@@ -611,6 +703,64 @@ footer {
     display: none;
 }
 
-	.half .half_last {
+
+/*column styles*/
+
+.grayarea {
+	background-color: #dbdcde;
+	padding-bottom: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	margin-top: -25px; 
 	
 }
+
+.whitearea {
+	padding-bottom: 40px;
+	padding-left: 0;
+	padding-right: 0;
+	}
+
+.half, .half_last {
+	width: 96%;
+	padding: 0 !important;
+	margin-right: 2%;
+	margin-left: 2%;
+	}
+
+.third {
+	width: 60%;
+	margin-right: 2%;
+	margin-left: 2%;
+	}
+
+.fourth, .fourth_third, .fourth_last {
+	float: clear;
+	width: 92%;
+	margin-right: 4%;
+	margin-left: 4%;
+	margin-top: 15px;
+	padding: 0;
+}
+
+.fourth .fade, .fourth_third .fade, .fourth_last .fade {
+	position: relative;
+	height: 108px;
+}
+
+/*end column styles*/
+
+
+/*text styles*/
+
+.readmore {
+	color: #ea3b3e
+	}
+	
+.button {
+	max-width: 50%;
+	}
+	
+	
+} /*end smallest media query*/
