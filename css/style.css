@@ -588,12 +588,16 @@ footer {
 
 @media screen and (max-width: 800px) {
 	
+
+	header {
+		position: absolute;
+	}
 	.search_bar {
 		width: 60%;
 	}
 
 	.logo_mobile {
-	position: fixed;
+	position: absolute;
 	width: 100px;
     left: 0;
     top: 0;
