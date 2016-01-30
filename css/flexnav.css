@@ -149,6 +149,7 @@
         top: 0; }
 
   .menu-button {
+    display: none; }
 .oldie body.one-page {
   padding-top: 70px; }
 .oldie .flexnav {
