@@ -265,48 +265,14 @@ nav {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.15); 
 }
 
-/* deprecated nav styles*/
 
-ul {
-	text-align: center;
-}
-
-
-ul li {
-	font: 13px Montserrat, 'Helvetica', sans-serif;
-	-webkit-transition: padding .05s linear;
-	-moz-transition: padding .05s linear;
-	-ms-transition: padding .05s linear;
-	-o-transition: padding .05s linear;
-	transition: padding .05s linear;
-}
-
-
-ul li {
-	display: inline-block;
-}
-ul li a {
-	text-align: center;
-	line-height: 60px;
-	height: 80px;
-	color: #777;
-	padding: 0px 5px;
-	-webkit-transition: all .1s ease-out;
-	-moz-transition: all .1s ease-out;
-	-ms-transition: all .1s ease-out;
-	-o-transition: all .1s ease-out;
-	transition: all .1s ease-out;
-}
-ul li a:hover {
-	color: #eee;
-}
-
-ul li:hover a { color: #ea3b3e; }
-
-/*end deprecated nav */
 
 /* DAN: this style of commenting with all the <<<<<< symbols seems to be messing up the below styles??! <<<<<<< HEAD
-=======*/
+=======
+
+That's not a comment. It's git telling us there was a merge conflict, in this case it ended up regressing styles, I figured it out however.
+
+*/
 
 .ag_whole {
 	font-weight: 700;
