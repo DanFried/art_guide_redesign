@@ -166,6 +166,19 @@ img #hero {
 	margin-bottom: 10px;
 }
 
+.googlemap {
+	width: 100%;
+	height: 510px;
+}
+
+.noscrolling {
+	z-index: 6;
+	width: 100%;
+	height: 510px;
+	background-color: transparent;
+	position: absolute;
+}
+
 /* logo styles */
 
 .logo_mobile {
@@ -617,12 +630,23 @@ footer {
 
 /*column styles*/
 
+.half .outer {
+	width: 100%;
+	}
+
 .third {
-	width: 48%;
+	width: 36%;
 	margin-right: 2%;
 	margin-left: 2%;
 	}
-	
+
+.twothirds {
+	float: left;
+	width: 58%;
+	margin-right: 2%;
+	margin-left: 0;
+	}
+		
 .fourth {
 	float: left;
 	width: 30.5%;
@@ -730,9 +754,22 @@ footer {
 	margin-right: 2%;
 	margin-left: 2%;
 	}
+	
+.half.dofloat {
+	clear: both;
+	width: 44%;
+	margin-right: 4%;
+	}
 
-.third {
-	width: 50%;
+.half_last.dofloat {
+	float: left;
+	width: 44%;
+	margin-bottom: 40px;
+}
+
+.third, .twothirds {
+	float: clear;
+	width: 96%;
 	margin-right: 2%;
 	margin-left: 2%;
 	}

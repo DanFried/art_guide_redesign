@@ -30,13 +30,9 @@
 <body>
 <!--h1 is for the main title.
 	h2 is for the heading of each section (such as Art Walk, Events, etc).
-    h3 is for a sub-heading below the h2 if needed.
+    h3 is for a sub-heading below the h2 if needed. See second heading in the Location section for an example.
     h4 is for a small headline on a specific article, featured event, etc.
-    h5 is for a clickable button.
-
-    Just to add to this, I don't think we should h4s for the date, as it isn't exactly a title.
-    Putting it in a P with a Span for styling might be good.
-    -->
+    h5 is for a clickable button. -->
     
     <header>
 
@@ -389,7 +385,7 @@
             <div class="whitearea">
             	<h2>Upcoming Events</h2>
                     
-                    <div class="half">
+                    <div class="half outer">
                     <!--Event #1--><a href="#">
                         <div class="half">
                             <img src="img/KehindeWiley_RandersonRomualdoCordeiro.jpg" alt="Kehinde Wiley's painting called Randerson Romualdo Cordeiro"/>
@@ -476,11 +472,11 @@
             
             <!--Location #1-->
              <a href="http://tklofts.com/tk-studios/">
-                    <div class="half">
+                    <div class="half dofloat">
                         <img src="img/JodyJoldersma_TheAscent.jpeg" alt="Painting of creatures by Jody Joldersma called The Ascent"/>
                     </div>
                 </a>
-                    <div class="half_last">
+                    <div class="half_last dofloat">
                     	<a href="http://tklofts.com/tk-studios/">
                         <h4>TK Studios</h4>
                         </a>
@@ -493,11 +489,11 @@
          
             <!--Location #2-->
               <a href="http://www.platformgallery.com/current.html">
-                    <div class="half">
+                    <div class="half dofloat">
                         <img src="img/AdamEkberg_Occurance2.jpg" alt="Photograph of milk splashing by Adam Ekberg called Occurance2"/>
               </div>
               </a>
-                    <div class="half_last">
+                    <div class="half_last dofloat">
                     	<a href="http://www.platformgallery.com/current.html">
                         <h4>Platform Gallery</h4>
                         </a>
@@ -510,11 +506,11 @@
                     
                     <!--Location #3-->
                       <a href="http://www.ggibsongallery.com/">
-                            <div class="half">
+                            <div class="half dofloat">
                                 <img src="img/CableGriffith_MountainStream.jpg" alt="Winding river going down a mountain by Cable Griffith called Mountain Stream"/>
                       </div>
                       </a>
-                            <div class="half_last">
+                            <div class="half_last dofloat">
                             	<a href="http://www.ggibsongallery.com/">
                                 <h4>G. Gibson Gallery</h4>
                                 </a>
@@ -527,11 +523,11 @@
                     
                     <!--Location #4-->
                       <a href="http://soilart.org/">
-                       <div class="half">
+                       <div class="half dofloat">
                                 <img src="img/NolaAvienne_HairpieceforBjork.jpeg" alt="Iron filing sculpture by Nola Avienne called Hairpiece for Bjork"/>
                      	</div>
                      		 </a>
-                       	     <div class="half_last">
+                       	     <div class="half_last dofloat">
                             	<a href="http://soilart.org/">
                                 <h4>SOIL Gallery</h4>
                                 </a>
@@ -543,6 +539,15 @@
                             </div><!--End Location #4-->
                     
             	       </div>
+                       <div class="twothirds">
+                       		
+                       		<!--this item below is the google map. i made a "mymap" of some gallery locations, mainly in the pioneer square and capitol hill areas. here is the link for viewing the map: https://www.google.com/maps/d/edit?mid=zTd-cH3zXbkM.kuNj0YsniqUk&usp=sharing
+                       This is a public map that anyone can see. I am the owner of the map, and I have given both Dan and Erik permission to edit it. -->
+                       		<iframe class="googlemap" src="https://www.google.com/maps/d/u/0/embed?mid=zTd-cH3zXbkM.kuNj0YsniqUk&z=17&ll=47.60051, -122.33322"></iframe>
+                      		<div class="noscrolling"> <!--i created this div to make a box that goes over the map. The purpose of this box is to make it so that, when you are scrolling down the page, you don't accidentally manipulate the map instead of continuing to scroll down, which is annoying. But then, if you click/tap on this box, you can make it stop covering the map so that now you are scrolling on the map. it's in progress/not working yet.-->
+                       		</div>
+                       </div>
+                       
                     </div>
                 </div>
             </div>
