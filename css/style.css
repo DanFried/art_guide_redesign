@@ -88,7 +88,7 @@ header {
 	}
 
 
-.whole, .half, .half_last, .third, .third_last, .twothirds, .fourth, .fourth_third, .fourth_last {
+.whole, .half, .half_last, .third, .third_last, .twothirds, .lefttwothirds, .fourth, .fourth_third, .fourth_last {
 	margin-bottom: 20px;
 	}
 
@@ -133,6 +133,14 @@ header {
 	width: 62%;
 	margin-right: 0;
 	}
+
+.lefttwothirds {
+	margin-top: 200px;
+	width: 62%;
+	margin-right: 4%;
+	margin-left: 3%;
+	}
+	
 	
 .fourth, .fourth_third {
 	float: left;
@@ -381,7 +389,7 @@ a h3:hover {
 	
 h4 {
 	text-align: left;
-	margin-bottom: 8px;
+	margin-bottom: 2px;
     font-family: 'Montserrat', sans;
 	font-size: 18px;
 	font-weight: 700;
