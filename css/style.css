@@ -136,9 +136,12 @@ header {
 
 .lefttwothirds {
 	margin-top: 200px;
-	width: 62%;
+	width: 60%;
+	float: left;
 	margin-right: 4%;
 	margin-left: 3%;
+	padding-left: 4%;
+	padding-right: 4%;
 	}
 	
 	
