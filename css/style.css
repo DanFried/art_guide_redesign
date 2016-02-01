@@ -433,6 +433,7 @@ h5 {
 	}
 
 p {
+	padding-top: 10px;
 	text-align: left;
     font-family: 'Lora', serif;
 	font-size: 14px;
@@ -447,7 +448,7 @@ p {
 
 .fade {
 	position: relative;
-	height: 288px; /*exactly 16 lines */
+	height: 300px; /*exactly 16 lines */
 }
 
 .fade:after {
