@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) 
  This is for the carousel and is dropped in from dreamweaver with a lot of edits made to get rid of unnecessary formatting.*/
 
-
+/* This was for the old carousel style.
 @font-face {
   font-family: 'Glyphicons Halflings';
 
@@ -290,3 +290,5 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+*/

@@ -162,6 +162,12 @@ img #hero {
 	position: relative;
 	}
 
+.artwalk_carousel {
+	width: 80%;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
 .fourth img, .fourth_third img, .fourth_last img {
 	margin-bottom: 10px;
 }
@@ -258,7 +264,7 @@ img #hero {
 	background-color: #fff; 
 	font-size: 14px; 
 	padding: 8px; 
-	border: 1px 
+	border: 1px
 	solid #ccc; 
 	outline: none; 
 	-moz-border-radius: 4px; 
@@ -278,15 +284,6 @@ nav {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.15); 
 }
 
-
-
-/* DAN: this style of commenting with all the <<<<<< symbols seems to be messing up the below styles??! <<<<<<< HEAD
-=======
-
-That's not a comment. It's git telling us there was a merge conflict, in this case it ended up regressing styles, I figured it out however.
-
-*/
-
 .ag_whole {
 	font-weight: 700;
 }
@@ -295,8 +292,6 @@ That's not a comment. It's git telling us there was a merge conflict, in this ca
 	color: #ea3b3e;
 }
 
-
-/* commenting this out because it is causing problems. >>>>>>> origin/gh-pages*/
 /* end nav styles */
 		
 .grayarea {
@@ -403,6 +398,14 @@ a h4:hover {
 	font-style: italic;
 }	
 
+.walkinfo {
+	text-align: center;
+	font-family: 'Montserrat', sans;
+	font-size: 14px;
+	font-weight: 400;
+	color: white;
+}	
+
 .locinfo {
 	text-align: left;
 	font-family: 'Montserrat', sans;
@@ -498,38 +501,6 @@ a.button:hover {
 	color: white;
 	}
 	
-
-/*These are for the slides. */
-
-/* for slides that have been navigated past the current*/
-.css-slider .slide:focus ~ .slide {
-	padding-left: 40px;
-	padding-right: 0;
-	left: 0;
-	right: 40px;
-	}
-	
-.css-slider .slide:focus, .css-slider .slide:focus:hover, .css-slider .slide:last-child, .css-slider:last-child:hover {
-	left: 40px; right: 40px;
-	padding-left: 0;
-	padding-right: 0;
-	background: transparent;
-	z-index: 101;
-	cursor: default;
-}
-
-.css-slider .slide {
-	display: block;
-	position: absolute;
-	left: 40px;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	padding-left: 0;
-	padding-right: 0;
-	z-index: 100;
-	outline: 0;
-}
 
 /* footer styles */
 

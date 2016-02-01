@@ -8,16 +8,15 @@
 <link href='https://fonts.googleapis.com/css?family=Lora:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-
-
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Arts Guide Northwest</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/flexnav.css" rel="stylesheet" type="text/css">
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<!--next 2 links are for the slick carousel--><link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+<!--I think this one had been for the old carousel, so I'm commenting it out for now. <link href="css/bootstrap.css" rel="stylesheet" type="text/css">-->
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -319,55 +318,104 @@
     	<div class="row">
     	<div class="whole">
         <div class="grayarea">
-    		<h2>Art Walks</h2>
-            
-    		<!--begin carousel. I got this carousel by inserting straight from dreamweaver and then deleting a bunch of unnecessary stuff. feel free to edit if you find problems!-->
-        <div id="carousel1" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel1" data-slide-to="1"></li>
-                <li data-target="#carousel1" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-               		 <div class="artwalk">
-        				<a href="#">
-            				<img src="img/georgetownseattle.jpg" alt="Brick building in Seattle's Georgetown Neighborhood" class="center-block">
-                       		 <div class="typeover">
-                             <h3>Georgetown Art Attack</h3>
-                             <h4>Second Saturday | February 13, 2016</h4>
-                             </div>
-          				</a>
-                  	</div>
-                </div>
-                <div class="item">
-                	<div class="artwalk">
-                    	<a href="#">
-                    		<img src="img/ballardseattle.jpg" alt="Chittenden Locks in Seattle's Ballard Neighborhood" class="center-block">
-                        	<div class="typeover">
-                            <h3>Ballard Artwalk</h3>
-                            <h4>Second Saturday | February 13, 2016</h4>
-                            </div>
-                  		</a>
+    		<h2>Art Walks</h2>         
+
+			<!--Begin slick carousel that Dan suggested: find it at http://kenwheeler.github.io/slick/-->
+            <div class="artwalk_carousel">
+  				
+                <div class="artwalk">
+                	<a href="#">
+            			<img src="img/pioneersquareseattle.jpg" alt="Iconic structure in Seattle's Pioneer Square district" class="center-block">
+                       	<div class="typeover">
+                         <h4>Pioneer Square Gallery Walk</h4>
+                          <div class="walkinfo">First Thursday | February 4, 2016</div>
+                        </div>
+          			  </a>
+                  </div>
+                
+                <div class="artwalk">
+                	<a href="#">
+            			<img src="img/fremonttroll.jpg" alt="Troll sculpture under a bridge in Fremont, Seattle" class="center-block">
+                       	<div class="typeover">
+                         <h4>Fremont Art Walk</h4>
+                          <div class="walkinfo">First Friday | February 5, 2016</div>
+                        </div>
+          			  </a>
+                  </div>
+                
+                 <div class="artwalk">
+                	<a href="#">
+            			<img src="img/capitolhillrainbow.jpg" alt="Rainbow sidewalk in Seattle's Capitol Hill neighborhood" class="center-block">
+                       	<div class="typeover">
+                         <h4>Capitol Hill Blitz</h4>
+                          <div class="walkinfo">Second Thursday | February 11, 2016</div>
+                        </div>
+          			  </a>
+                  </div>
+        
+                 <div class="artwalk">
+                	<a href="#">
+            			<img src="img/westseattlebeach.jpg" alt="Beach view in West Seattle" class="center-block">
+                       	<div class="typeover">
+                         <h4>West Seattle Art Walk</h4>
+                          <div class="walkinfo">Second Thursday | February 11, 2016</div>
+                        </div>
+          			  </a>
+                  </div>
+                   
+                   <div class="artwalk">
+                	<a href="#">
+            			<img src="img/belltownneedle.jpg" alt="Space Needle in the evening" class="center-block">
+                       	<div class="typeover">
+                         <h4>Belltown Art Walk</h4>
+                          <div class="walkinfo">Second Friday | February 12, 2016</div>
+                        </div>
+          			  </a>
+                  </div>
+                
+                    <div class="artwalk">
+                	<a href="#">
+            			<img src="img/phinneytrees.jpg" alt="Trees with knitted sweaters in a Phinney Ridge park in Seattle" class="center-block">
+                       	<div class="typeover">
+                         <h4>Phinneywood Art Up</h4>
+                          <div class="walkinfo">Second Friday | February 12, 2016</div>
+                        </div>
+          			  </a>
+                  </div>
+                
+                <div class="artwalk">
+                	<a href="#">
+            			<img src="img/georgetownseattle.jpg" alt="Brick building in Seattle's Georgetown Neighborhood" class="center-block">
+                       	<div class="typeover">
+                         <h4>Georgetown Art Attack</h4>
+                          <div class="walkinfo">Second Saturday | February 13, 2016</div>
+                        </div>
+          			  </a>
+                  </div>
+                  
+  				<div class="artwalk">
+                    <a href="#">
+                    	<img src="img/ballardseattle.jpg" alt="Chittenden Locks in Seattle's Ballard Neighborhood" class="center-block">
+                        <div class="typeover">
+                        <h4>Ballard Artwalk</h4>
+                         <div class="walkinfo">Second Saturday | February 13, 2016</div>
+                         </div>
+                  	</a>
                  	 </div>
-                </div>
-                <div class="item">
-                	<div class="artwalk">
-                        <a href="#">
-                            <img src="img/centraldistrictseattle.jpg" alt="Ernestine Anderson mural from the Jackson Street Music History Project in Seattle's Central District" class="center-block">
+                     
+   				<div class="artwalk">
+                     <a href="#">
+                           <img src="img/centraldistrictseattle.jpg" alt="Ernestine Anderson mural from the Jackson Street Music History Project in Seattle's Central District" class="center-block">
                             <div class="typeover">
-                            <h3>Central District Art Walk</h3>
-                            <h4>Second Saturday | February 13, 2016</h4>
+                            <h4>Central District Art Walk</h4>
+                            <div class="walkinfo">Second Saturday | February 13, 2016</div>
                             </div>
                         </a>
                     </div>
-                </div>
-          </div>
-          <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
-          <a class="right carousel-control" href="#carousel1" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
-       </div>
-  <!--end carousel-->          
+                    
+			</div>
 
+           <!-- slick carousel ends here.-->
            
         <a class="button" href="#"> 
    		<h5>More Art Walk Dates</h5>  
@@ -658,6 +706,46 @@ http://www.seattleweekly.com/arts/962059-129/the-sklallam-artist-behind-marvels-
         $.fn.hoverIntent = function(handlerIn,handlerOut,selector) {
     </script>
 
+<!--these are for the new slick carousel-->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.artwalk_carousel').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+    });
+  </script>
+  
+  <!--end stuff for the slick carousel. just fyi, they "highly recommend" putting that last chunk (initialization?) into a .js file, but i'm not really sure how to set up a .js file, so i didn't. -Brigid -->
 
 
     
