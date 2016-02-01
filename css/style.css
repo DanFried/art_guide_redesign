@@ -222,7 +222,9 @@ img #hero {
 
 
 /* search styles */
-.search-field-container { position: relative; }
+.search-field-container { 
+	position: relative; 
+}
 
 .search-field { 
 	width: 70%; 
@@ -510,6 +512,23 @@ footer {
 	background-color: white;
 	padding-top: 10px;
 	overflow: none;
+}
+
+.logo_footer {
+	position: relative;
+	width: 100px;
+    left: 0;
+    top: 0;
+    text-align: left;
+    margin-top: 4px;
+    margin-left: 20px;
+    padding-right: 20px;
+    padding-left: 10px;
+    display: inline;
+}
+
+.logo_footer a svg{
+	width: 60px;
 }
 
 
