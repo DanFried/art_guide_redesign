@@ -706,9 +706,10 @@ http://www.seattleweekly.com/arts/962059-129/the-sklallam-artist-behind-marvels-
         $.fn.hoverIntent = function(handlerIn,handlerOut,selector) {
     </script>
 
-<!--these are for the new slick carousel-->
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!--these are for the new slick carousel
+I commented out the first two script calls, since we are already calling a more current version of jquery from google's CDN these calls were overriding and killing the nav animation again. We only have to call the library once.-->
+<!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
 <script type="text/javascript" src="slick/slick.min.js"></script>
 
 <script type="text/javascript">
