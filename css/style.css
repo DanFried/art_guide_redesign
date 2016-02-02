@@ -133,6 +133,20 @@ header {
 	width: 62%;
 	margin-right: 0;
 	}
+<<<<<<< HEAD
+=======
+
+.lefttwothirds {
+	margin-top: 200px;
+	width: 60%;
+	float: left;
+	margin-right: 4%;
+	margin-left: 3%;
+	padding-left: 4%;
+	padding-right: 4%;
+	}
+	
+>>>>>>> origin/gh-pages
 	
 .fourth, .fourth_third {
 	float: left;
