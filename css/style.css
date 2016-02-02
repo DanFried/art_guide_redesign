@@ -96,7 +96,7 @@ header {
 		padding-top: 160px;
 		margin-bottom: 0px;
 		margin-top: 0px;
-		}
+		}		
 
 .whole {
 	width: 100%;
@@ -128,6 +128,11 @@ header {
 	margin-right: 0;
 	}
 
+.addlnews {
+	padding-top: 235px;
+	margin-top: 0px;
+	}
+
 .twothirds {
 	float: left;
 	width: 62%;
@@ -137,13 +142,13 @@ header {
 =======
 
 .lefttwothirds {
-	margin-top: 200px;
 	width: 60%;
 	float: left;
+	margin-top: 200px;
 	margin-right: 4%;
 	margin-left: 3%;
-	padding-left: 4%;
-	padding-right: 4%;
+	padding-left: 2%;
+	padding-right: 2%;
 	}
 	
 >>>>>>> origin/gh-pages
@@ -189,14 +194,6 @@ img #hero {
 .googlemap {
 	width: 100%;
 	height: 510px;
-}
-
-.noscrolling {
-	z-index: 6;
-	width: 100%;
-	height: 510px;
-	background-color: transparent;
-	position: absolute;
 }
 
 /* logo styles */
@@ -512,7 +509,12 @@ a:hover {
 	padding: 10px;
 	background-color: #6d6e70;
 	}
-	
+
+#aside {
+	margin-top: 20px;
+	max-width: 100%;
+}
+
 a.button:hover {
 	background-color: #ea3b3e;
 	color: white;
@@ -772,12 +774,24 @@ footer {
 	margin-bottom: 40px;
 }
 
-.third, .twothirds {
+.third, .twothirds, .lefttwothirds, .third_last {
 	float: clear;
 	width: 96%;
 	margin-right: 2%;
 	margin-left: 2%;
 	}
+	
+.addlnews {
+	padding-top: 40px;
+	margin-top: 0px;
+	}
+	
+.go {
+	visibility: hidden;
+	float: left;
+	height: 0;
+	margin: none;
+}
 
 .fourth, .fourth_third, .fourth_last {
 	float: clear;
@@ -818,6 +832,14 @@ h4 {
 .button {
 	max-width: 50%;
 	}
+
+.addlnews {
+	margin-bottom: 0;
+}
+
+#aside {
+	margin-top: 0;
+}
 
 a .locinfo {
 	margin-top: 4px;
