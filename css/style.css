@@ -510,8 +510,12 @@ a:hover {
 	background-color: #6d6e70;
 	}
 
+.contentblock {
+	margin-top: 35px;
+}
+
 #aside {
-	margin-top: 20px;
+	margin-top: 0;
 	max-width: 100%;
 }
 
@@ -790,7 +794,7 @@ footer {
 	visibility: hidden;
 	float: left;
 	height: 0;
-	margin: none;
+	margin: 0;
 }
 
 .fourth, .fourth_third, .fourth_last {
@@ -831,6 +835,7 @@ h4 {
 	
 .button {
 	max-width: 50%;
+	vertical-align: top;
 	}
 
 .addlnews {
@@ -839,6 +844,7 @@ h4 {
 
 #aside {
 	margin-top: 0;
+	max-width: 70%;
 }
 
 a .locinfo {
